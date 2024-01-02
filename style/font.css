@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "vazir-thin";
+    src: url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Thin.eot),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Thin.woff2),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Thin.woff),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Thin.ttf);
+}
+
+@font-face {
+    font-family: "vazir-bold";
+    src: url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Bold.eot),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Bold.woff2),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Bold.woff),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Bold.ttf);
+}
+
+@font-face {
+    font-family: "vazir-light";
+    src: url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Light.eot),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Light.woff2),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Light.woff),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Light.ttf);
+}
+
+@font-face {
+    font-family: "vazir-medium";
+    src: url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Medium.eot),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Medium.woff2),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Medium.woff),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Medium.ttf);
+}
+
+@font-face {
+    font-family: "vazir-regular";
+    src: url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Regular.eot),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Regular.woff2),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Regular.woff),
+    url(../vazir/vazir-font-v27.2.2-Fontjo.com/Vazir-Regular.ttf);
+}
