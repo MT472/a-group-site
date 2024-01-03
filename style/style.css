@@ -1,4 +1,234 @@
 body{
     box-sizing: border-box;
-    
+    font-family: vazir-medium;
+    direction: rtl;
+}
+
+
+/*header*/
+
+.hheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hheader .icon{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 4rem ;
+}
+.hheader .icon img{
+    width: 2rem;
+    padding: 0  0 0 .7rem;
+}
+.hheader .icon h3{
+    font-size: 1.5rem;
+    color: #1f1f1f;
+}
+.hheader .log{
+    width: 50%;
+    text-align: left;
+}
+.hheader .log a{
+    font-size: 1rem;
+    color: #1f1f1f;
+    margin: 1rem 4rem;
+    padding: .2rem .8rem;
+    text-decoration-line: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+
+/*main*/
+
+.information{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.information .iinformation{
+    width: 60%;
+    margin: 1.5rem 2rem 3rem;
+    flex-direction: column;
+}
+.information .iinformation h1{
+    font-size: 3.2rem;
+    padding: .7rem;
+    color: #000;
+    line-height: 1.2;
+}
+.information .iinformation h2{
+    font-size: 2rem;
+    padding: .7rem;
+    color: #000;
+    line-height: 1.2;
+}
+.information .iinformation p{
+    font-size: 1.2rem;
+    color: #525252;
+    padding: .7rem;
+    margin-bottom: 3rem;
+    line-height: 2;
+}
+.information .iinformation a{
+    font-size: 1.5rem;
+    background-color: #179e7e;
+    color: #fff;
+    text-decoration-line: none;
+    padding: 1rem ;
+    margin: 1rem;
+    border-radius: 7px;
+}
+.information .gif{
+    width: 40%;
+    margin: 1.5rem 2rem 3rem;
+}
+.information .gif video{
+    width: 100%;
+}
+
+
+.zer h2{
+    font-size: 2rem;
+    padding: 2rem  .7rem 0;
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+}
+.zer p{
+    font-size: 1.2rem;
+    padding: 0 .7rem 2rem;
+    margin-bottom: 3rem;
+    line-height: 2;
+    color: #525252;
+    text-align: center;
+}
+
+
+.learning{
+    display: flex;
+    flex-direction: row;
+    margin: 5.5rem 0;
+}
+.learning .java1{
+    display: flex;
+    width: 20%;
+    align-self: center;
+    flex-direction: column;
+    padding: 1.4rem;
+}
+.learning .java1 img{
+    width: 5rem;
+    align-self: center;
+}
+.learning .java1 a{
+    text-decoration-line: none;
+    color: #000;
+    margin: .4rem;
+    text-align: center;
+}
+.learning .java{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    padding: 1.4rem;
+    border-right: 2px solid #ccc;
+}
+.learning .java img{
+    width: 5rem;
+    align-self: center;
+}
+.learning .java a{
+    text-decoration-line: none;
+    color: #000;
+    margin: .4rem;
+    text-align: center;
+}
+
+
+
+
+hr{
+    width: 90%;
+    background-color: #000;
+    height: 1px;
+}
+
+
+.join{
+    margin: 3rem 0 5rem;
+}
+.join h1{
+    font-size: 2.1rem;
+    padding: 2rem  .7rem 0;
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 3.4rem;
+}
+.join a{
+    font-size: 1.2rem;
+    background-color: #179e7e;
+    color: #fff;
+    text-decoration-line: none;
+    padding: 1rem 3rem;
+    border-radius: 7px;
+}
+
+
+/*footer*/
+
+.footer{
+    background-color: #1f1f1f;
+}
+.ffooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content:space-between ;
+}
+.ffooter .iconn{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    margin: 1.5rem 1rem 2.5rem 0;
+}
+.ffooter .iconn h3{
+    color: #fff;
+}
+.ffooter .iconn img{
+    width: 3rem;
+    margin-left: .5rem;
+} 
+.ffooter .team{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 1.5rem 0 2.5rem;
+}
+.ffooter .team h3{
+    color: #fff;
+}
+.ffooter .team a{
+    color: #525252;
+    text-decoration-line: none;
+}
+.media{
+    display: flex;
+    margin: 5rem 10% 3rem 0;
+}
+.media .bale a img{
+    width: 2rem;
+    margin-left: 1.5rem;
+}
+.media .telegram a img{
+    width: 2rem;
+}
+.c p{
+    color: #fff;
+    text-align: center;
+    padding-bottom: .5rem;
 }
