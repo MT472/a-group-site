@@ -11,46 +11,32 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 3rem;
 }
 .hheader .icon{
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem 4rem ;
+    width: 50%;
+    margin: 2%;
 }
 .hheader .icon img{
-    width: 2rem;
+    width: 40%;
     padding: 0  0 0 .7rem;
 }
-.hheader .icon h3{
-    font-size: 1.5rem;
-    color: #1f1f1f;
-}
 .hheader .log{
-    width: 80%;
+    width: 50%;
     text-align: left;
 }
 .hheader .log a{
-    font-size: 1rem;
+    font-size: 100%;
     color: #1f1f1f;
-    margin: 2rem 4rem;
     padding: .2rem .8rem;
+    margin: 2rem;
     text-decoration-line: none;
     border: 2px solid #000;
     border-radius: 5px;
 }
-@media (max-width:692px) {
-    .hheader{
-        flex-direction: column;
-    }
-    .hheader .icon{
-        width: 100%;
-        margin-right: 8rem;
-    }
-    .hheader .log{
-        width: 100%;
-        text-align: right;
+@media (max-width:778px) {
+    .hheader .icon img{
+        width: 70%;
     }
 }
 
@@ -60,83 +46,69 @@ body{
 .information{
     display: flex;
     flex-direction: row-reverse;
-    align-content:space-around;
+    align-content: center;
     width: 100%;
-    margin-top: 3rem;
 }
 .information .iinformation{
-    width: calc(60%-4rem);
+    width: 60%;
     flex-direction: column;
-    margin: 0 2rem;
 }
 .information .iinformation h1{
-    font-size: 2.2rem;
+    font-size: 220%;
     padding: .7rem;
     color: #000;
     line-height: 1.2;
 }
 .information .iinformation h2{
-    font-size: 2rem;
+    font-size: 200%;
     padding: .7rem;
     color: #000;
     line-height: 1.2;
 }
 .information .iinformation p{
-    font-size: 1.2rem;
+    font-size: 120%;
     color: #525252;
     padding: .7rem;
     margin-bottom: 3rem;
     line-height: 2;
 }
 .information .iinformation a{
-    font-size: 1.5rem;
+    font-size: 150%;
     background-color: #179e7e;
     color: #fff;
     text-decoration-line: none;
     padding: .8rem 3rem ;
-    margin: 1rem 0;
+    margin: 1rem 1rem 1rem 0;
     border-radius: 7px;
 }
 .information .gif{
-    width: calc(40%-4rem);
-    margin: 0 2rem;
+    width: 40%;
 }
 .information .gif video{
     width: 100%;
 }
 .information .gif img{
-    width: 110%;
-}
-
-@media (max-width : 1000px) {
-    .information .iinformation{
-        width: calc(40%-4rem);
-    }
-    .iinformation h1{
-        font-size: 1rem;
-    }
-    .iinformation h2{
-        font-size: 1rem;
-    }
-    .iinformation p{
-        font-size: .6rem;
-    }
-    .iinformation a{
-        font-size: .8rem;
-    }
-    .information .gif{
-        width: calc(60%-4rem);
-    }
+    width: 100%;
 }
 @media (max-width : 840px) {
     .information{
         flex-direction: column;
     }
-    .information .gif video{
-        display: none;
+    .jh{
+        flex-direction: column-reverse;
     }
-    .information .gif img{
-        display: none;
+    .information .iinformation{
+        width: 100%;
+    }
+    .information .gif{
+        width: 100%;
+    }
+    .information .iinformation a{
+        display: block;
+        width: 60%;
+        text-align: center;
+        padding: 1rem 0;
+        margin: 0 20%;
     }
 }
 @media (max-width : 528px){
@@ -166,14 +138,13 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 5.5rem 4rem;
-    padding: 4rem ;
+    margin: 6rem 0;
 }
 .learning .java{
     display: flex;
     width: 20%;
-    margin-bottom: 1rem;
     flex-direction: column;
+    margin-top: .5rem;
 }
 .hhh{
     width: 100%;
@@ -181,16 +152,20 @@ body{
 .learning .java img{
     width: 100%;
     align-self: center;
+    border-right: 1px solid #ccc;
 }
-.learning .java a{
-    text-decoration-line: none;
-    color: #000;
-    margin: .4rem;
-    text-align: center;
+.learning .java1 img{
+    border-right: none;
 }
 @media (max-width:724px) {
-    .learning{
-        margin: 5.5rem 1rem;
+    .learning .java{
+        width: 33.33%;
+    }
+    .learning .py{
+        margin-right: 16.66%;
+    }
+    .learning .py img{
+        border-right: none;
     }
 }
 
