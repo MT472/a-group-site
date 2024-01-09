@@ -167,12 +167,11 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     margin: 5.5rem 4rem;
-    background-color: aliceblue;
     padding: 4rem ;
 }
 .learning .java{
     display: flex;
-    width: 50%;
+    width: 20%;
     margin-bottom: 1rem;
     flex-direction: column;
 }
@@ -180,7 +179,7 @@ body{
     width: 100%;
 }
 .learning .java img{
-    width: 5rem;
+    width: 100%;
     align-self: center;
 }
 .learning .java a{
