@@ -1,0 +1,156 @@
+html{
+    font-size: 100%;
+    font-family: vazir-med;
+    direction: rtl;
+    
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    color: #1f1f1f;
+}
+
+.banana{
+    width: 80%;
+    margin: 0 auto;
+}
+@media(max-width : 768px) {
+        .banana{
+            width:70% ;
+        }
+    }
+
+.form{
+    margin-top: 2rem;
+}
+
+.form .form-tytle{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family:"vazir-bold";
+    color: #1f1f1f;
+    margin-bottom: 1rem;
+}
+
+.form label{
+    font-weight: bold;
+}
+
+.form input.form-control{
+    width: 100%;
+    font-family: inherit;
+    padding: .6rem ;
+    border: 1px solid #1f1f1f;
+    border-radius: 20px;
+}
+
+.form label , 
+.form input:not([type="checkbox"]) {
+    display: block;
+    margin-bottom: .7rem;
+
+}
+
+.form input.form-control::placeholder{
+    color: #1f1f1f ;
+    font-size: .4rems;
+    font-family: vazir-light ;
+}
+.form input.form-control::-moz-placeholder{
+    color: #1f1f1f ;
+    font-size: .4rems;
+    font-family: vazir-light ;
+}
+.form input.form-control::-webkit-input-placeholder{
+    color: #1f1f1f ;
+    font-size: .4rems;
+    font-family: vazir-light ;
+}
+.form input.form-control::-ms-input-placeholder{
+    color: #1f1f1f ;
+    font-size: .4rems;
+    font-family: vazir-light ;
+}
+
+.checkbox input {
+    display: none;
+}
+.checkbox{
+    position: relative;
+    padding: .3rem 2.2rem 1rem 0;
+}
+
+input:invalid{
+    background: #fff !important;
+    border: 3px solid red !important;
+}
+.checkbox .checkmark{
+    height: 25px;
+    width: 25px;
+    background: rgba(0,0,0, .1);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 19px;
+}
+
+.checkbox:hover .checkmark{
+    background: rgba(0,0,0, .3) ;
+}
+
+.checkbox input:checked ~ .checkmark{
+    background: #2196f3;
+}
+
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+    width: 5px;
+    height: 12px;
+    border : solid #fff ;
+    top :5px;
+    right:9px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.checkbox input:checked ~ .checkmark::after{
+    display: block;
+}
+input.form-control{
+    background: #ddf1f2;
+    color: blue;
+}
+.form input:focus{
+    background: #ddf1f2;
+    color: blue;
+    border: 3px solid #ccc;
+    outline: none;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    border: none;
+    font-family: inherit;
+    border-radius: 15px;
+    background: #fff;
+    color: #1f1f1f;
+    border: 3px solid #ccc;
+}
+
+.forget{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: 1rem;
+    font-family: vazir-light ;
+}
+.forget a{
+    color: #1f1f1f;
+}
+.forget p{
+    color: #1f1f1f;
+}
