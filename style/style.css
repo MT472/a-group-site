@@ -1,7 +1,9 @@
-body{
-    box-sizing: border-box;
+html{
     font-family: vazir-medium;
     direction: rtl;
+}
+* {
+    box-sizing: border-box;
 }
 
 
@@ -101,7 +103,8 @@ body{
         width: 100%;
     }
     .information .gif{
-        width: 100%;
+        width: 80%;
+        margin: 0 10%;
     }
     .information .iinformation a{
         display: block;
