@@ -1,0 +1,33 @@
+<svg width="118" height="118" viewBox="0 0 118 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M77.5 24.5V15L71 10" stroke="#542C0C" stroke-width="2"/>
+<path d="M20.5 93L10.5 118.889L39 123H65.5L106.5 118.556L96 93H57H20.5Z" fill="#535353"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M82 23.5H76.5V38.5L84.5 45L89 40V29.5L82 23.5ZM43 28.5H30V55.5L35.5 60H43V28.5Z" fill="#542C0C"/>
+<path d="M47 74H67V95.5L62.5 103.5H54.5L47 95.5V74Z" fill="#FDB784"/>
+<path d="M46.5 95L53.5 103.5H63L67.5 95" stroke="black" stroke-width="2"/>
+<path d="M38 32L52.5 18H70L86 30V75.5L78 90H51L38 72V32Z" fill="#FDB784"/>
+<rect x="32" y="49" width="9" height="15" fill="#FDB784"/>
+<path d="M72 54.5L77 65" stroke="black" stroke-width="2"/>
+<path d="M66 44H56L53.5 46" stroke="#542C0C" stroke-width="2"/>
+<path d="M76.5 44H86" stroke="#542C0C" stroke-width="2"/>
+<line x1="57" y1="50" x2="66" y2="50" stroke="black" stroke-width="2"/>
+<line x1="77" y1="50" x2="86" y2="50" stroke="black" stroke-width="2"/>
+<rect x="60" y="52" width="3" height="3" fill="black"/>
+<rect x="80" y="52" width="3" height="3" fill="black"/>
+<path d="M68 72H81V79.5H65.5L60 74L65 69L68 72Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M78 75V72H68L65 69L63 71L67 75H78Z" fill="white"/>
+<path d="M40 49H32V30L29 23L43.5 12.5L68.5 10.5L77 17V23H55L45.5 32.5V52L43 56.5L40 56V49Z" fill="#542C0C"/>
+<rect x="72" y="102" width="4" height="2" fill="#8E8E8E"/>
+<rect x="61" y="111" width="2" height="3" fill="#8E8E8E"/>
+<rect x="85" y="104" width="2" height="4" fill="#8E8E8E"/>
+<rect x="30" y="99" width="2" height="3" fill="#8E8E8E"/>
+<rect x="85" y="93" width="3" height="3" fill="#8E8E8E"/>
+<rect x="40" y="93" width="3" height="6" fill="#8E8E8E"/>
+<rect x="42" y="109" width="5" height="2" fill="#8E8E8E"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="118" height="118" fill="white"/>
+</clipPath>
+</defs>
+</svg>
