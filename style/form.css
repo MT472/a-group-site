@@ -32,7 +32,8 @@ body{
     font-weight: bold;
     font-family:"vazir-bold";
     color: #1f1f1f;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .form label{
@@ -44,7 +45,7 @@ body{
     font-family: inherit;
     padding: .6rem ;
     border: 1px solid #1f1f1f;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .form label , 
@@ -134,11 +135,11 @@ input.form-control{
 .btn{
     padding: .5rem 1rem;
     border: none;
-    font-family: inherit;
+    font-family: vazir-bold;
     border-radius: 15px;
-    background: #fff;
+    background: #179e7e;
     color: #1f1f1f;
-    border: 3px solid #ccc;
+    border: 3px solid #179e7e;
 }
 
 .forget{
@@ -148,9 +149,33 @@ input.form-control{
     margin-top: 1rem;
     font-family: vazir-light ;
 }
+.forget div{
+    display: flex;
+}
 .forget a{
+    font-size: 1rem;
     color: #1f1f1f;
+    font-family: vazir-regular;
 }
 .forget p{
+    font-size: 1rem;
     color: #1f1f1f;
+    margin: 0 .3rem;
+    font-family: vazir-regular;
+}
+@media (max-width:642px) {
+    .forget{
+        flex-direction: column;
+    }
+    .forget a{
+        margin-bottom: .4rem;
+    }
+}
+@media (max-width:376px) {
+    .forget a{
+        font-size: .8rem;
+    }
+    .forget p{
+        font-size: .8rem;
+    }
 }
