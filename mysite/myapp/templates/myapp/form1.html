@@ -1,12 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width , initial-scale=1.0 ">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="./style/font.css">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/form.css">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{% static './style/font.css' %}">
+    <link rel="stylesheet" href="{% static './style/reset.css' %}">
+    <link rel="stylesheet" href="{% static './style/form.css' %}">
 
 </head>
 
@@ -14,9 +16,9 @@
     
     <div class="banana">
 
-        <form class="form" action="#">
-
-            <h2 class="form-tytle">فرم ثبت نام</h2>
+        <form class="form" action="#" method='POST'>
+            {% csrf_token %}
+            <h2 class="form-tytle">فرم ورود</h2>
     
             <label for="name">نام</label>
             <input type="text" name="name" id="name" class="form-control" placeholder="لطفا نام را وارد کنید" required>
@@ -28,18 +30,17 @@
             <input type="password" name="password" id="password" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="5">
     
             <label for="password-confirm">تکرار پسورد</label>
-            <input type="password-confirm" name="password-confirm" id="password-confirm" class="form-control" placeholder="لطفا پسوردتان را تکرار کنید" required minlength="5">
+            <input type="password2" name="password2" id="password-confirm" class="form-control" placeholder="لطفا پسوردتان را تکرار کنید" required minlength="5">
     
-            <label for="rules" class="checkbox" >
-                <input type="checkbox" name="rules" id="rules" required>قوانین را قبول دارم
-                <span class="checkmark"></span>
-            </label>
     
-            <button class="btn">ثبت نام</button>
+            <button tpe="submit" class="btn">ثبت نام</button>
 
             <div class="forget">
                 <div>
-                    <a href="./form1.html">قبلا ثبت نام کرده ام</a>
+                    <p>پسوردتان را فراموش کرده اید؟  </p>
+                </div>
+                <div>
+                    <a href="{% url 'signup'%}">حساب جدید بسازید</a>
                 </div>
             </div>
     

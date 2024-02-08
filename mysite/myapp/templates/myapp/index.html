@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/font.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="{% static './style/reset.css' %}">
+    <link rel="stylesheet" href="{% static './style/font.css' %}">
+    <link rel="stylesheet" href="{% static './style/style.css' %}">
     <title>brilliant</title>
 </head>
 
@@ -14,10 +15,10 @@
     <header class="header">
         <div class="hheader">
             <div class="icon">
-                <img src="./FilmPicture/logo.png" alt="">
+                <img src="{% static './FilmPicture/logo.png'%}" alt="">
             </div>
             <div class="log">
-                <a href="./form1.html">وارد شوید</a>
+                <a href="{% url 'login' %}">وارد شوید</a>
             </div>
         </div>
     </header>
@@ -25,39 +26,39 @@
         <div class="information">
             <div class="gif">
                 <video preload="auto" autoplay="autoplay" muted="muted" playsinline="" loop="loop" data-v-051c56b6="">
-                    <source src="./FilmPicture/gif.mp4" type="video/mp4" data-v-051c56b6="">
+                    <source src="{% static './FilmPicture/gif.mp4' %}" type="video/mp4" data-v-051c56b6="">
                 </video>
             </div>
             <div class="iinformation ghh">
                 <h1>بهترین راه برای یادگیری ریاضی و علوم کامپیوتر</h1>
                 <p>حل مسئله تعاملی هدایت شده که موثر و سرگرم کننده است. مفاهیم را در 15 دقیقه در روز استاد شوید.</p>
-                <a href="./form2.html">شروع کنید</a>
+                <a href="{% url 'signup' %}">شروع کنید</a>
             </div>
         </div>
         <div class="learning">
             <div class="java java1">
                 <a href="#">
-                    <img src="./FilmPicture/css.png" alt="">
+                    <img src="{% static './FilmPicture/css.png' %}" alt="">
                 </a>
             </div>
             <div class="java">
                 <a href="#">
-                    <img src="./FilmPicture/django.png" alt="">
+                    <img src="{% static './FilmPicture/django.png' %}" alt="">
                 </a>
             </div>
             <div class="java">
                 <a href="#">
-                    <img src="./FilmPicture/html.png" alt="">
+                    <img src="{% static './FilmPicture/html.png' %}" alt="">
                 </a>
             </div>
             <div class="java py">
                 <a href="#">
-                    <img src="./FilmPicture/python.png" alt="">
+                    <img src="{% static './FilmPicture/python.png' %}" alt="">
                 </a>
             </div>
             <div class="java hhh">
                 <a href="#">
-                    <img src="./FilmPicture/java.png" alt="">
+                    <img src="{% static './FilmPicture/java.png' %}" alt="">
                 </a>
             </div>
         </div>
@@ -68,7 +69,7 @@
         <div class="information">
             <div class="gif">
                 <video preload="auto" autoplay="autoplay" muted="muted" playsinline="" loop="loop" data-v-051c56b6="">
-                    <source src="./FilmPicture/giff.mp4" type="video/mp4" data-v-051c56b6="">
+                    <source src="{% static './FilmPicture/giff.mp4' %}" type="video/mp4" data-v-051c56b6="">
                 </video>
             </div>
             <div class="iinformation">
@@ -82,12 +83,12 @@
                 <p>دانش آموزان و متخصصان به طور یکسان می توانند مهارت های خفته را تقویت کنند یا مهارت های جدیدی بیاموزند. از طریق درس ها و چالش های متناسب با سطح شما پیشرفت کنید.</p>
             </div>
             <div class="gif">
-                <img src="./FilmPicture/gifff.svg" alt="">
+                <img src="{% static './FilmPicture/gifff.svg' %}" alt="">
             </div>
         </div>
         <div class="information">
             <div class="gif">
-                <img src="./FilmPicture/giffff.png" alt="">
+                <img src="{% static './FilmPicture/giffff.png' %}" alt="">
             </div>
             <div class="iinformation">
                 <h2>دروس هدایت شده به اندازه لقمه</h2>
@@ -100,32 +101,32 @@
                 <p>یک عادت یادگیری واقعی را با محتوای سرگرم کننده که همیشه با سرعت خوب، ردیابی پیشرفت شبیه به بازی و یادآوری های دوستانه است، ایجاد کنید.</p>
             </div>
             <div class="gif">
-                <img src="./FilmPicture/gifffff.svg" alt="">
+                <img src="{% static './FilmPicture/gifffff.svg' %}" alt="">
             </div>
         </div>
         <hr class="hr">
         <div class="join">
             <h1>به ما بپیوندید و عضوی از ما شوید</h1>
-            <center><a href="./form2.html">شروع کنید</a></center>
+            <center><a href="{% url 'signup' %}">شروع کنید</a></center>
         </div>
     </main>
     <footer class="footer">
         <div class="ffooter">
             <div class="iconn">
-                <img src="./FilmPicture/Bale.png" alt="">
+                <img src="{% static './FilmPicture/Bale.png' %}" alt="">
                 <h3>تیم ما</h3>
             </div>
             <div class="team">
                 <h3>تیم ما</h3>
-                <a href="./aboutUs.html">درباره ما</a>
+                <a href="{% url 'aboutus' %}">درباره ما</a>
             </div>
         </div>
         <div class="media">
             <div class="bale">
-                <a href="#"><img src="./FilmPicture/Bale.png" alt=""></a>
+                <a href="#"><img src="{% static './FilmPicture/Bale.png' %}" alt=""></a>
             </div>
             <div class="telegram">
-                <a href="#"><img src="./FilmPicture/Telegram.jpg" alt=""></a>
+                <a href="#"><img src="{% static './FilmPicture/Telegram.jpg' %}" alt=""></a>
             </div>
         </div>
         <div class="c">
