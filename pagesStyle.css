@@ -1,0 +1,153 @@
+html{
+    font-family: vazir-medium;
+    direction: rtl;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+/*header*/
+
+.hheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.hheader .icon{
+    width: 50%;
+    margin: 2%;
+}
+.hheader .icon img{
+    width: 40%;
+    padding: 0  0 0 .7rem;
+}
+.hheader .log{
+    width: 50%;
+    text-align: left;
+}
+.hheader .log a{
+    font-size: 100%;
+    color: #1f1f1f;
+    padding: .2rem .8rem;
+    margin: 2rem;
+    text-decoration-line: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+@media (max-width:778px) {
+    .hheader .icon img{
+        width: 70%;
+    }
+}
+
+
+/*main*/
+.hello{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main{
+    display: flex;
+    width: calc(100% - 4rem);
+    flex-direction: row;
+    margin: 1rem 2rem 5rem;
+}
+.main .gorilla{
+    width: 40%;
+    align-self: center;
+}
+.main .gorilla img{
+    width: 80%;
+}
+.main .bear{
+    width: 60%;
+    align-self: center;
+}
+.main .bear h3{
+    font-family: vazir-bold;
+    font-size: 200%;
+    line-height: 1.4;
+}
+.main .bear p{
+    font-family: vazir-medium;
+    font-size: 120%;
+    line-height: 2;
+}
+
+@media (max-width:1010px) {
+    .main{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .mainn{
+        flex-direction: column-reverse;
+    }
+    .main .gorilla{
+        width: 60%;
+        margin: 0 10% 0 0;
+    }
+    .main .bear{
+        width: 80%;
+        padding-left: 0 !important;
+    }
+}
+
+
+
+/*footer*/
+
+.footer{
+    background-color: #1f1f1f;
+}
+.ffooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content:space-between ;
+}
+.ffooter .iconn{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    margin: 1.5rem 1rem 2.5rem 0;
+}
+.ffooter .iconn h3{
+    color: #fff;
+}
+.ffooter .iconn img{
+    width: 3rem;
+    margin-left: .5rem;
+} 
+.ffooter .team{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin: 1.5rem 0 2.5rem;
+}
+.ffooter .team h3{
+    color: #fff;
+}
+.ffooter .team a{
+    color: #525252;
+    text-decoration-line: none;
+}
+.media{
+    display: flex;
+    margin: 5rem 10% 3rem 0;
+}
+.media .bale a img{
+    width: 2rem;
+    margin-left: 1.5rem;
+}
+.media .telegram a img{
+    width: 2rem;
+}
+.c p{
+    color: #fff;
+    text-align: center;
+    padding-bottom: .7rem;
+    margin: 0 2rem;
+}
