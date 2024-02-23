@@ -6,7 +6,6 @@ html{
     box-sizing: border-box;
 }
 
-
 /*header*/
 
 .hheader{
@@ -17,28 +16,43 @@ html{
 }
 .hheader .icon{
     width: 50%;
-    margin: 2%;
+    margin-right: 2rem;
 }
 .hheader .icon img{
     width: 40%;
     padding: 0  0 0 .7rem;
 }
-.hheader .log{
+.hheader .logiii{
     width: 50%;
     text-align: left;
+    margin-left: 2rem;
 }
-.hheader .log a{
+header .logiii a{
+    margin: .5rem;
     font-size: 100%;
     color: #1f1f1f;
     padding: .2rem .8rem;
-    margin: 2rem;
     text-decoration-line: none;
     border: 2px solid #000;
     border-radius: 5px;
 }
-@media (max-width:778px) {
-    .hheader .icon img{
+@media (max-width:666px) {
+    .hheader .icon{
+        width: 30%;
+    }
+    .hheader .logiii{
         width: 70%;
+    }
+    .hheader .icon img{
+        width: 100%;
+    }
+}
+@media (max-width:496px) {
+    .klkl{
+        display: none;
+    }
+    .hheader .icon img{
+        width: 150%;
     }
 }
 
