@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-
+{% block content %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,9 +17,13 @@
             <div class="icon">
                 <img src="{% static './FilmPicture/logo.png'%}" alt="">
             </div>
+            {% if user.is_authenticated %}
+            Hi {{user.username}}
             <div class="log">
+            {% else %}
                 <a href="{% url 'login' %}">وارد شوید</a>
             </div>
+            {% endif %}
         </div>
     </header>
     <main class="main">
@@ -37,27 +41,27 @@
         </div>
         <div class="learning">
             <div class="java java1">
-                <a href="#">
+                <a href="{% url 'css' %}">
                     <img src="{% static './FilmPicture/css.png' %}" alt="">
                 </a>
             </div>
             <div class="java">
-                <a href="#">
+                <a href="{% url 'django' %}">
                     <img src="{% static './FilmPicture/django.png' %}" alt="">
                 </a>
             </div>
             <div class="java">
-                <a href="#">
+                <a href="{% url 'html' %}">
                     <img src="{% static './FilmPicture/html.png' %}" alt="">
                 </a>
             </div>
             <div class="java py">
-                <a href="#">
+                <a href="{% url 'python' %}">
                     <img src="{% static './FilmPicture/python.png' %}" alt="">
                 </a>
             </div>
             <div class="java hhh">
-                <a href="#">
+                <a href="{% url 'js' %}">
                     <img src="{% static './FilmPicture/java.png' %}" alt="">
                 </a>
             </div>
@@ -134,5 +138,5 @@
         </div>
     </footer>
 </body>
-
+{% endblock %}
 </html>

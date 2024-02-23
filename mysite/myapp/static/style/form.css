@@ -44,7 +44,7 @@ body{
     width: 100%;
     font-family: inherit;
     padding: .6rem ;
-    border: 1px solid #1f1f1f;
+    border: 2px solid #1f1f1f;
     border-radius: 10px;
 }
 
@@ -86,7 +86,7 @@ body{
 
 input:invalid{
     background: #fff !important;
-    border: 3px solid red !important;
+    border: 2px solid #1f1f1f !important;
 }
 .checkbox .checkmark{
     height: 25px;
@@ -112,7 +112,7 @@ input:invalid{
     display: none;
     width: 5px;
     height: 12px;
-    border : solid #fff ;
+    border : solid #1f1f1f ;
     top :5px;
     right:9px;
     border-width: 0 3px 3px 0;
@@ -122,13 +122,10 @@ input:invalid{
     display: block;
 }
 input.form-control{
-    background: #ddf1f2;
-    color: blue;
+    color: #1f1f1f;
 }
 .form input:focus{
-    background: #ddf1f2;
-    color: blue;
-    border: 3px solid #ccc;
+    border: 2px solid;
     outline: none;
 }
 

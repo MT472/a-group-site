@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static './style/reset.css' %}">
+    <link rel="stylesheet" href="{% static './style/font.css' %}">
+    <link rel="stylesheet" href="{% static './style/pagesStyle.css' %}">
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="hheader">
+            <div class="icon">
+                <img src="{% static './FilmPicture/logo.png'%}" alt="">
+            </div>
+            <div class="log">
+                <a href="{% url 'login' %}">وارد شوید</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hello">
+
+            <div class="main">
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/htmllogoo.webp' %}" alt="">
+                </div>
+                <div class="bear">
+                    <h3>HTML چیست؟</h3>
+                    <p>زبان برنامه نویسی HTML در اصل «زبان نشانه‌گذاری» استاندارد برای ایجاد صفحات وب است. HTML یک زبان ساده با ساختاری شفاف به حساب می‌آید و آموزش آن حتی برای افرادی که به تازگی قصد شروع یادگیری ساخت وب‌سایت را دارند، بسیار ساده است. سوال HTML چیست ممکن است برای افراد بسیاری مطرح باشد؛ چرا که HTML را می‌توان پایه و اساس وب و حتی اینترنت در نظر گرفت.</p>
+                </div>
+            </div>
+
+            <div class="main mainn">
+                <div class="bear" style="padding-left: 5rem;">
+                    <h3>HTML زبان برنامه نویسی است؟</h3>
+                    <p>لازم است به این مسئله توجه داشت که HTML‌ زبان برنامه نویسی نیست، بلکه یک زبان نشانه‌گذاری (Markup) است که ساختار محتوا را تعیین می‌کند. HTML دارای منطق برنامه نویسی نیست و عاری از عبارات شرطی مثل If و Else‌ است. در HTML‌ نمی‌توان متغیر تعریف کرد و تابع نوشت. امکان مدیریت رویدادها یا انجام وظایف در HTML وجود ندارد. با HTML به هیچ وجه نمی‌توان داده‌ها را تغییر داد یا آن‌ها را ویرایش کرد.</p>
+                </div>
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/HTML-Chist.jpg' %}" alt="">
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/htmlkk.jpg' %}" alt="">
+                </div>
+                <div class="bear">
+                    <h3>زبان نشانه گذاری HTML</h3>
+                    <p>HTML‌ یک نوع زبان نشانه گذاری است. یعنی HTML داده‌ها را محصور می‌کند یا آن‌ها را در داخل تگ‌های (برچسب‌های) HTML «علامت‌گذاری» می‌کند. این نشانه‌گذاری، هدف داده را تعریف و تفسیر می‌کند. سپس، مرورگر وب کدهای HTML‌ را می‌خواند و این کدها محل مؤلفه‌هایی مثل عنوان‌ها، پاراگراف‌ها، لینک‌ها و سایر موارد را برای مرورگر مشخص می‌کنند. در واقع، HTML داده را برای مرورگر توصیف می‌کند تا مرورگر وب بتواند داده‌ها را به شکل مناسبی نمایش دهد.</p>
+                </div>
+            </div>
+            
+            <div class="main mainn">
+                <div class="bear" style="padding-left: 2rem; ">
+                    <h3>
+                        HTML مخفف چیست ؟
+                    </h3>
+                    <p>HTML‌ سرنامی برای عبارت HyperText Markup Language به معنی زبان نشانه‌گذاری ابرمتن است. مفهوم دو کلمه HyperText و Markup ممکن است در ابتدا پیچیده و گنگ به نظر برسد، بنابراین، در ادامه این بخش توضیحات بیش‌تر درباره هر کدام ارائه شده است.</p>
+                </div>
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/html j .jpg' %}" alt="">
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/HTML-Tags.jpg.webp' %}" alt="">
+                </div>
+                <div class="bear">
+                    <h3>تگ های HTML‌ چه هستند ؟</h3>
+                    <p>این تگ های HTML‌ است که یک متن معمولی را از کد HTML‌ تفکیک می‌کنند. تگ‌ها یا برچسب‌های HTML بین یک علامت کوچک‌تر و یک علامت بزرگ‌تر یا در واقع در داخل پرانتز گوشه‌‌دار (Angle-Bracket) مثل <angle bracket> قرار می‌گیرند. امکان قرار دادن همه نوع چندرسانه مثل عکس، جدول و موارد دیگر در‌ یک صفحه وب، به وسیله تگ‌های HTML وجود دارد. تنها لازم است آنچه که مرورگر باید در صفحه رندر (Render | پردازش) کند را تعیین و مشخص کرد.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="ffooter">
+            <div class="iconn">
+                <img src="{% static './FilmPicture/Bale.png' %}" alt="">
+                <h3>تیم ما</h3>
+            </div>
+            <div class="team">
+                <h3>تیم ما</h3>
+                <a href="{% url 'aboutus' %}">درباره ما</a>
+            </div>
+        </div>
+        <div class="media">
+            <div class="bale">
+                <a href="#"><img src="{% static './FilmPicture/Bale.png' %}" alt=""></a>
+            </div>
+            <div class="telegram">
+                <a href="#"><img src="{% static './FilmPicture/Telegram.jpg' %}" alt=""></a>
+            </div>
+        </div>
+        <div class="c">
+            <p>برای استفاده از مطالب ما، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای تیم ما است.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

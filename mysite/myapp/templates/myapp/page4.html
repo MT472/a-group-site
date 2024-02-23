@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static './style/reset.css' %}">
+    <link rel="stylesheet" href="{% static './style/font.css' %}">
+    <link rel="stylesheet" href="{% static './style/pagesStyle.css' %}">
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="hheader">
+            <div class="icon">
+                <img src="{% static './FilmPicture/logo.png'%}" alt="">
+            </div>
+            <div class="log">
+                <a href="{% url 'login' %}">وارد شوید</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hello">
+
+            <div class="main">
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/DJANGO-PROJETOS-PYCHARM.webp' %}" alt="">
+                </div>
+                <div class="bear">
+                    <h3>جنگو چیست؟</h3>
+                    <p>جنگو (Django)، یک وب فریمورک پایتونی رایگان و اپن سورس (Open-source) است که با هدف توسعه سریع، آسان و کارآمد، توسط توسعه‌دهندگان باتجربه، ساخته شده است. در جنگو می‌توانید بدون اختراع مجدد چرخ، فقط روی نوشتن برنامه خود تمرکز کنید. جنگو حرفه‌ای بودن را در کنار سادگی و سرعت به ارمغان می‌آورد.</p>
+                </div>
+            </div>
+
+            <div class="main mainn">
+                <div class="bear" style="margin-left: 3rem;">
+                    <h3>اهمیت یادگیری فریمورک تحت وب Django با پایتون Python چیست؟</h3>
+                    <p>جنگو یکی از قدرتمندترین فریمورک‌های تحت وب است که با استفاده از پایتون توسعه داده شده است. این فریمورک به شما امکان می‌دهد تا برنامه‌های وب پیچیده را به سادگی و با کمترین تکرار کد پیاده‌سازی کنید. با استفاده از ابزارها و قابلیت‌های جنگو، کارهای متداول آسان‌تر شده و نیاز است تا بر روی منطق برنامه تمرکز کرده و آن را توسعه دهید. با وجود قابلیت‌های پیش‌فرض قوی و افزونه‌های متنوع در این فریمورک، شما می‌توانید برنامه‌هایی با امکانات گسترده و قابلیت انعطاف بالا بسازید. همچنین جنگو با ارائه ابزارها و روش‌های امنیتی متعدد، به برنامه‌نویسان کمک می‌کند تا برنامه‌های وب را با امنیت بالایی توسعه دهند. </p>
+                </div>
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/django-framework.jpg' %}" alt="">
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/Django-1.jpg' %}" alt="">
+                </div>
+                <div class="bear">
+                    <h3>چرا جنگو (Django) برای توسعه وب مناسب است؟</h3>
+                    <p>Django از اصل «دوباره انجامش نده (Don’t Repeat Yourself)» پیروی می‌کند و این، فریم‌ورک Django را از نظر راندمان زمانی کارآمد می‌کند. به عبارت دیگر، نیازی به بازنویسی کدهای موجود نیست؛ زیرا جنگو این امکان را به شما می‌دهد که وب‌سایت خود را مانند قطعات یک مجموعه لگو در کنار یکدیگر قرار دهید. این فریم‌ورک برای سیستم‌های با حجم بالای اطلاعات مناسب است و به لطف بسیاری از ابزار‌های کمکی می‌تواند زمان توسعه را کاهش دهد.</p>
+                </div>
+            </div>
+            
+            <div class="main mainn">
+                <div class="bear" style="margin-left: 3rem;">
+                    <h3>پیش نیازهای لازم برای یادگیری جنگو (django) چیست؟</h3>
+                    <p>برای شروع، باید بر زبان پایتون مسلط باشید. بنابراین اگر با این زبان آشنایی ندارید، ابتدا آموزش پایتون را شروع کنید و سپس به سراغ جنگو بروید در غیر این صورت یادگیری جنگو فایده چندانی برایتان نخواهد داشت.
+
+                        اما ممکن است این سوال برایتان به وجود بیاید که آیا کار با جنگو نیازمند آشنایی با پایتون به صورت حرفه‌ای ست؟ پاسخ منفی است! کافی‌ست با مفاهیم پایه‌ی Python، از جمله متغیرها، انواع داده، کلاس‌ها و توابع، کنترل جریان و کنترل خطا آشنا باشید و بتوانید از pip برای نصب بسته‌ها و اجرای دستورات ابتدایی از خط فرمان استفاده کنید.</p>
+                </div>
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/ezgifgggDjango.jpg' %}" alt="">
+                </div>
+            </div>
+            
+            <div class="main">
+                <div class="gorilla">
+                    <img src="{% static './FilmPicture/ezgif-6Django.jpg' %}" alt="">
+                </div>
+                <div class="bear">
+                    <h3>جنگو (Django) برای چه کارهایی مورد استفاده قرار می‌گیرد؟</h3>
+                    <p>فریم‌ورک Django نام خود را مدیون گیتاریست جاز، Django Reinhardt، است که با وجود اینکه دو انگشتش پس از یک تصادف فلج شده بود، می‌توانست با گیتار خود قطعه‌های خیره‌کننده‌ای را اجرا کند. فریم‌ورک جنگو نیز می‌تواند وظایف متعددی را انجام دهد. </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="ffooter">
+            <div class="iconn">
+                <img src="{% static './FilmPicture/Bale.png' %}" alt="">
+                <h3>تیم ما</h3>
+            </div>
+            <div class="team">
+                <h3>تیم ما</h3>
+                <a href="{% url 'aboutus' %}">درباره ما</a>
+            </div>
+        </div>
+        <div class="media">
+            <div class="bale">
+                <a href="#"><img src="{% static './FilmPicture/Bale.png' %}" alt=""></a>
+            </div>
+            <div class="telegram">
+                <a href="#"><img src="{% static './FilmPicture/Telegram.jpg' %}" alt=""></a>
+            </div>
+        </div>
+        <div class="c">
+            <p>برای استفاده از مطالب ما، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای تیم ما است.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

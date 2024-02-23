@@ -12,8 +12,15 @@
 </head>
 
 <body>
-    
-    
+
+    {% comment %} <form method='POST'>
+
+        {% csrf_token %}
+        {{ form }}
+
+        <button type='submit'>
+    </form> {% endcomment %}
+
     <div class="banana">
 
         <form class="form" action="#" method="POST">
@@ -21,20 +28,16 @@
             <h2 class="form-tytle">فرم ثبت نام</h2>
         
             <label for="name">نام</label>
-            
-            <input type="text" name="name" id="name" class="form-control" placeholder="لطفا نام را وارد کنید" required {{user_account.name}}>
+            <input type="text" name="username" id="username" class="form-control" placeholder="لطفا نام را وارد کنید" required {{form.name}}>
     
             <label for="email">ایمیل</label>
-            
-            <input type="email" name="email" id="emal" class="form-control" placeholder="لطفا ایمیل را وارد کنید" required {{user_account.email}}>
+            <input type="email" name="email" id="email" class="form-control" placeholder="لطفا ایمیل را وارد کنید" required {{form.email}}>
     
             <label for="password">پسورد</label>
-            
-            <input type="password" name="password" id="password" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="5" {{user_account.password}}>
+            <input type="password" name="password" id="password" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="5" {{form.password}}>
     
             <label for="password-confirm">تکرار پسورد</label>
-            
-            <input type="password2" name="password2" id="password2" class="form-control" placeholder="لطفا پسوردتان را تکرار کنید" required minlength="5" {{user_account.password}}>
+            <input type="password2" name="password2" id="password2" class="form-control" placeholder="لطفا پسوردتان را تکرار کنید" required minlength="5">
     
             <label for="rules" class="checkbox">
                 <input type="checkbox" name="rules" id="rules" required>قوانین را قبول دارم
