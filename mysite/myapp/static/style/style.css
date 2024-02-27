@@ -27,7 +27,7 @@ html{
     text-align: left;
     margin-left: 2rem;
 }
-header .logiii a{
+header .logiii a {
     margin: .5rem;
     font-size: 100%;
     color: #1f1f1f;
@@ -35,6 +35,15 @@ header .logiii a{
     text-decoration-line: none;
     border: 2px solid #000;
     border-radius: 5px;
+}
+.user{
+    margin: .5rem;
+    font-size: 100%;
+    color: #1f1f1f;
+    padding: .2rem .8rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: inline;
 }
 @media (max-width:666px) {
     .hheader .icon{

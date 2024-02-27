@@ -1,40 +1,36 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth import authenticate,login
-from django.contrib import messages
-from django.views.generic import CreateView
-from django.contrib.auth.forms import AuthenticationForm,UserCreationForm
 from django.contrib.auth.decorators import login_required
+from .forms import SignupForm,LoginForm
+from django.contrib.auth import authenticate,login
+from django.contrib.auth.models import User
+from django.http import HttpResponse
 
-def register(request):
+def signup(request):
     if request.method=='POST':
-        form=UserCreationForm(request.POST)
+        form=SignupForm(request.POST,request.FILES)
         if form.is_valid():
-            form.save()
-            username=form.cleaned_data.get('username')
-            raw_password=form.cleaned_data('password1')
-            user=authenticate(username=username,password=raw_password)
-            login(request,user)
-            return redirect('index')
+            cd=form.cleaned_data
+            user=User.objects.create_user(cd['username'],cd['email'],cd['password'])
+            user.save()
+            return redirect('login')
     else:
-        form=UserCreationForm()
-    return render(request,'myapp/form2.html',{'form':form})
+        form=SignupForm()
+    return render(request,'myapp/form2.html',context={'form':form})
 
 def user_login(request):
-    form=AuthenticationForm(data=request.POST)
     if request.method=='POST':
-        username=form.cleaned_data.get('username')
-        password=form.cleaned_data.get('password')
-        user=authenticate(username=username,password=password)
-        if user is not None:
-            login(request,login)
-            return redirect('index')
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            cd=form.cleaned_data
+            user=authenticate(request,username=cd['username'],password=cd['password'])
+            if user is not None:
+                login(request, user)
+                return redirect('index')
+            else:
+                return redirect('invalid')
     else:
-        form=AuthenticationForm()
+        form =LoginForm()
     return render(request,'myapp/form1.html',{'form':form})
-
-@login_required
-def account_detail(request):
-    return render(request,'myapp/account.html')
 
 def aboutus(request):
     return render(request,'myapp/aboutUs.html')

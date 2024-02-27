@@ -18,9 +18,15 @@
                 <img src="{% static './FilmPicture/logo.png'%}" alt="">
             </div>
             <div class="logiii">
-                    <a href="./form1.html">وارد شوید</a>
-                    <a href="./form2.html" class="klkl">ثبت نام</a>
-                    <a href="./aboutUs.html" class="klkl">درباره ما</a>
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}">logout</a>
+                    <p class="user">سلام {{ user.username }}</p>
+                    {% else %}
+                    <a href="{% url 'signup' %}" class="klkl">ثبت نام</a>
+                    
+                    <a href="{% url 'login' %}">وارد شوید</a>
+                    {% endif %}
+                    <a href="{% url 'aboutus' %}" class="klkl">درباره ما</a>
             </div>
         </div>
     </header>
@@ -32,6 +38,7 @@
                 </video>
             </div>
             <div class="iinformation ghh">
+                
                 <h1>بهترین راه برای یادگیری ریاضی و علوم کامپیوتر</h1>
                 <p>حل مسئله تعاملی هدایت شده که موثر و سرگرم کننده است. مفاهیم را در 15 دقیقه در روز استاد شوید.</p>
                 <a href="{% url 'signup' %}">شروع کنید</a>

@@ -18,9 +18,14 @@
                 <img src="{% static './FilmPicture/logo.png' %}" alt="">
             </div>
             <div class="logiii">
-                    <a href="./form1.html">وارد شوید</a>
-                    <a href="./form2.html" class="klkl">ثبت نام</a>
-                    <a href="./index.html" class="klkl">صفحه اصلی</a>
+                {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">logout</a>
+                <p class="user">{{ user.username }}</p>
+                {% else %}
+                    <a href="{% url 'login' %}">وارد شوید</a>
+                    <a href="{% url 'signup' %}" class="klkl">ثبت نام</a>
+                {% endif %}
+                    <a href="{% url 'index' %}" class="klkl">صفحه اصلی</a>
             </div>
         </div>
     </header>
@@ -28,21 +33,21 @@
         <div class="mainn">
             <div class="farjami">
                 <div>
-                    <img src="{% static './FilmPicture/parsa.svg' %}" alt="">
+                    <img src="{% static './FilmPicture/YAZD.jpg' %}" alt="">
                     <h2>پارسا فرجامی</h2>
-                    <p>بک اند زن گروه با زبان Django</p>
+                    <p>بک اند زن گروه با زبان Python و فریمورک Django</p>
                 </div>
             </div>
             <div class="malek">
                 <div>
-                    <img src="{% static './FilmPicture/mohammad.svg' %}" alt="">
+                    <img src="{% static './FilmPicture/malek.jpg' %}" alt="">
                     <h2>محمد حسین ملک محمدی</h2>
                     <p>فرانت زن گروه با زبان های html و css و javascript و دیگر زبان ها</p>
                 </div>
             </div>
             <div class="eden">
                 <div class="eden">
-                    <img src="{% static './FilmPicture/eden.svg' %}" alt="">
+                    <img src="{% static './FilmPicture/eden.jpg' %}" alt="">
                     <h2>سید طاها موسوی</h2>
                     <p>در حال کار روی بک اند و الگوریتم زن گروه</p>
                 </div>

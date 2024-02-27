@@ -6,6 +6,7 @@ html{
     box-sizing: border-box;
 }
 
+
 /*header*/
 
 .hheader{
@@ -68,46 +69,28 @@ header .logiii a{
 
 
 /*main*/
-
-.mainn{
-    width: 100%;
-    display: flex;
-}
-.mainn div{
-    width: 70%;
+.mainMT{
+    margin: 10rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
 }
-.mainn div img{
-    width: 100%;
-    background-color: #dfdddd;
-    border-radius: 50%;
-}
-.mainn div h2{
+.h1111 h1{
     font-family: vazir-bold;
+    font-size: 300%;
+}
+.buttona{
+    margin-top: 5rem;
+}
+.buttona a{
+    font-family: vazir-medium;
     font-size: 100%;
-    color: #1f1f1f;
+    text-decoration-line: none;
+    background-color: #179e7e;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fff;
 }
-.mainn div p{
-    font-family: vazir-bold;
-    font-size: 100%;
-    color: #757575;
-}
-@media (max-width:818px) {
-    .mainn{
-        flex-direction: column;
-    }
-    .mainn div{
-        width: 100%;
-    }
-    .mainn div img{
-        width: 50%;
-    }
-
-}
-
 
 
 /*footer*/

@@ -21,9 +21,15 @@
                 <img src="{% static './FilmPicture/logo.png'%}" alt="">
             </div>
             <div class="logiii">
-                    <a href="./form1.html">وارد شوید</a>
-                    <a href="./form2.html" class="klkl">ثبت نام</a>
-                    <a href="./aboutUs.html" class="klkl">صفحه اصلی</a>
+                {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">logout</a>
+                <p class="user">{{ user.username }}</p>
+                {% else %}
+                <a href="{% url 'signup' %}" class="klkl">ثبت نام</a>
+                
+                <a href="{% url 'login' %}">وارد شوید</a>
+                {% endif %}
+                <a href="{% url 'index' %}" class="klkl">صفحه اصلی</a>
             </div>
         </div>
     </header>

@@ -1,3 +1,62 @@
-<h1>You have been logout out</h1>
-{% csrf_token %}
-<a  href="{% url 'index' %}"><button type='submit'> go to the first page </button></a>
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './style/reset.css' %}">
+    <link rel="stylesheet" href="{% static './style/font.css' %}">
+    <link rel="stylesheet" href="{% static './style/logout.css' %}">
+    <title>brilliant</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="hheader">
+            <div class="icon">
+                <img src="{% static './FilmPicture/logo.png'%}" alt="">
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="mainMT">
+            <div class="h1111">
+                <h1>شما از حسابتان خارج شدید</h1>
+            </div>
+            {% csrf_token %}
+            <div class="buttona">
+                <a  href="{% url 'index' %}">بازگشت به صفحه اصلی</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="ffooter">
+            <div class="iconn">
+                <img src="{% static './FilmPicture/Bale.png' %}" alt="">
+                <h3>تیم ما</h3>
+            </div>
+            <div class="team">
+                <h3>تیم ما</h3>
+                <a href="{% url 'aboutus' %}">درباره ما</a>
+            </div>
+        </div>
+        <div class="media">
+            <div class="bale">
+                <a href="#"><img src="{% static './FilmPicture/Bale.png' %}" alt=""></a>
+            </div>
+            <div class="telegram">
+                <a href="#"><img src="{% static './FilmPicture/Telegram.jpg' %}" alt=""></a>
+            </div>
+        </div>
+        <div class="c">
+            <p>برای استفاده از مطالب ما، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای تیم ما است.</p>
+        </div>
+    </footer>
+</body>
+{% endblock %}
+</html>

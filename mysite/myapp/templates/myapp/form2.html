@@ -12,17 +12,8 @@
 </head>
 
 <body>
-
-    {% comment %} <form method='POST'>
-
-        {% csrf_token %}
-        {{ form }}
-
-        <button type='submit'>
-    </form> {% endcomment %}
-
     <div class="banana">
-
+{% block content %}
         <form class="form" action="#" method="POST">
             {% csrf_token %}
             <h2 class="form-tytle">فرم ثبت نام</h2>
@@ -37,21 +28,21 @@
             <input type="password" name="password" id="password" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="5" {{form.password}}>
     
             <label for="password-confirm">تکرار پسورد</label>
-            <input type="password2" name="password2" id="password2" class="form-control" placeholder="لطفا پسوردتان را تکرار کنید" required minlength="5">
+            <input type="password2" name="password2" id="password2" class="form-control" placeholder="لطفا پسوردتان را تکرار کنید" required minlength="5" {{form.password2}}>
     
             <label for="rules" class="checkbox">
                 <input type="checkbox" name="rules" id="rules" required>قوانین را قبول دارم
                 <span class="checkmark"></span>
             </label>
-    
+            <br><br><br>
             <button type="submit" class="btn">ثبت نام</button>
-
+            
             <div class="forget">
                 <div>
                     <a href="{% url 'login'%}">قبلا ثبت نام کرده ام</a>
                 </div>
             </div>
-    
+    {% endblock %}
         </form>
     
 
