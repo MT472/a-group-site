@@ -1,0 +1,25 @@
+.reset label{
+    font-family: "vazir-bold";
+    font-size: 30px;
+    margin-left: 38%;
+    margin-top:200px;
+}
+.reset input{
+    border-radius: 5px;
+    text-align: left;
+    justify-content: center;
+    margin-top: 230px;
+    font-size: 20px;
+}
+.reset button{
+    margin-left: 685px;
+    font-family: vazir-medium;
+    font-size: 130%;
+    text-decoration-line: none;
+    background-color: #179e7e;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}

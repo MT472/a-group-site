@@ -1,2 +1,10 @@
-<h1>نام کار بری یا رمز عبور اشتباه است</h1>
-<button><a href="{% url 'login' %}">بازگشت به صفحه لاگین</a></button>
+{% load static %}
+<html>
+    
+    <link rel="stylesheet" href="{% static './style/form.css' %}">
+    <body>
+{% csrf_token %}
+<h1 class='invalidh1'>نام کار بری یا رمز عبور اشتباه است</h1>
+<button class='invalid'><a class='invalida' href="{% url 'login' %}">بازگشت به صفحه لاگین</a></button>
+    </body>
+</html>

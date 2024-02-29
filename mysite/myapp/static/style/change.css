@@ -1,0 +1,42 @@
+.change label{
+    margin-left: 36%;
+    font-family: "vazir-bold";
+    margin-top: 40px;
+    font-size: 25px;
+}
+.change input{
+    margin-top: 85px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: vazir-med;
+}
+.change button{
+    margin-left: 685px;
+    font-family: vazir-medium;
+    font-size: 130%;
+    text-decoration-line: none;
+    background-color: #179e7e;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 210px;
+    cursor: pointer;
+}
+
+.chang h1{
+    margin-left: 32%;
+    margin-top: 260px;
+    font-family: "vazir-bold";
+    font-size: 50px;
+}
+.chang a{
+    font-family: vazir-med;
+    font-size: 140%;
+    text-decoration-line: none;
+    background-color: #179e7e;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 650px;
+    margin-top: 30px;
+}

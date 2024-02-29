@@ -114,9 +114,28 @@
             </div>
         </div>
         <hr class="hr">
-        <div class="join">
+        <div class='change'>
+            {% if user.is_authenticated %}
+            <div class='change-password'>
+                <p>میخواهید رمز عبورتان را تغییر دهید؟</p>
+                </div>
+                
+                <div>
+                    <a href="{% url 'password_change'%}">تغیر رمز عبور</a>
+                </div>
+            </div>
+            <div>
+                <p>رمز عبور را فراموش کرده اید؟  </p>
+            </div>
+            
+            <div>
+                <a href="{% url 'password_reset'%}">بازیابی رمز عبور</a>
+            </div>
+            {% else %}
+            <div class="join">
             <h1>به ما بپیوندید و عضوی از ما شوید</h1>
             <center><a href="{% url 'signup' %}">شروع کنید</a></center>
+            {% endif %}
         </div>
     </main>
     <footer class="footer">

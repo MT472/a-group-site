@@ -13,6 +13,14 @@ body{
     color: #1f1f1f;
 }
 
+.invalid button{
+    border-radius: 15px;
+}
+.invalidh1 h1{
+    font-family: "vazir-bold";
+    font-size: 250px;
+}
+
 .banana{
     width: 80%;
     margin: 0 auto;

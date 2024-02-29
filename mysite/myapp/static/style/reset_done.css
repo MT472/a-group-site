@@ -1,0 +1,19 @@
+.reset a{
+    font-family: vazir-medium;
+    font-size: 140%;
+    text-decoration-line: none;
+    background-color: #179e7e;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 650px;
+    margin-top: 440px;
+}
+
+.reset h1{
+    font-family: "vazir-bold";
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 280px;
+}
