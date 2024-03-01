@@ -1,0 +1,60 @@
+.reset label{
+    font-family: "vazir-bold";
+    font-size: 30px;
+    margin-left: 35%;
+    margin-top:200px;
+}
+.reset input{
+    border-radius: 5px;
+    text-align: left;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 20px;
+}
+.reset button{
+    margin-left: 685px;
+    font-family: vazir-medium;
+    font-size: 130%;
+    text-decoration-line: none;
+    background-color: #179e7e;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 150px;
+    cursor: pointer;
+}
+.h1{
+    font-family: "vazir-bold";
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 280px;
+}
+.a{
+    font-family: vazir-medium;
+    font-size: 140%;
+    text-decoration-line: none;
+    background-color: #179e7e;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 650px;
+    margin-top: 440px;
+}
+.bazyabi{
+    font-family: "vazir-bold";
+    font-size: 70px;
+    text-align: center;
+    margin-top: 250px;
+}
+.index{
+    font-family: vazir-medium;
+    font-size: 140%;
+    text-decoration-line: none;
+    background-color: #179e7e;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 650px;
+    margin-top: 440px;
+}

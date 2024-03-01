@@ -9,7 +9,6 @@ html{
 }
 
 body{
-    background-color: #fff;
     color: #1f1f1f;
 }
 
@@ -20,19 +19,43 @@ body{
     font-family: "vazir-bold";
     font-size: 250px;
 }
-
-.banana{
-    width: 80%;
-    margin: 0 auto;
+.lolo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url(../FilmPicture/yes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
-@media(max-width : 768px) {
-        .banana{
-            width:70% ;
-        }
+.lol{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url(../FilmPicture/nono.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0;
+}
+.banana{
+    padding: 4rem;
+    align-self: center;
+    background-color: #fff;
+    width: 40%;
+    border-radius: 30px;
+}
+@media (max-width:880px) {
+    .banana{
+        width: 50%;
     }
-
+}
+@media (max-width:700px) {
+    .banana{
+        width: 60%;
+    }
+}
 .form{
-    margin-top: 2rem;
+    width: 100%;
 }
 
 .form .form-tytle{
@@ -40,12 +63,13 @@ body{
     font-weight: bold;
     font-family:"vazir-bold";
     color: #1f1f1f;
-    margin-bottom: 2rem;
-    text-align: center;
+    margin-bottom: 4rem;
+    text-align: right;
 }
 
 .form label{
     font-weight: bold;
+    margin-top: 2rem;
 }
 
 .form input.form-control{
@@ -145,25 +169,27 @@ input.form-control{
     background: #179e7e;
     color: #1f1f1f;
     border: 3px solid #179e7e;
+    margin-top: 2rem;
 }
 
 .forget{
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-family: vazir-light ;
 }
 .forget div{
     display: flex;
 }
 .forget a{
-    font-size: 1rem;
+    font-size: 70%;
     color: #1f1f1f;
     font-family: vazir-regular;
+    text-decoration-line: none;
 }
 .forget p{
-    font-size: 1rem;
+    font-size: 70%;
     color: #1f1f1f;
     margin: 0 .3rem;
     font-family: vazir-regular;
