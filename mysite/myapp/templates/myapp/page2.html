@@ -17,79 +17,90 @@
     
     <header class="header">
         <div class="hheader">
-            <div class="icon">
-                <img src="{% static './FilmPicture/logo.png'%}" alt="">
-            </div>
-            <div class="logiii">
-                {% if user.is_authenticated %}
-                <a href="{% url 'logout' %}">logout</a>
-                <p class="user">{{ user.username }}</p>
-                {% else %}
-                <a href="{% url 'signup' %}" class="klkl">ثبت نام</a>
+            <div class="icon logiii">
+                <img src="./FilmPicture/logo.png" alt="">
                 
-                <a href="{% url 'login' %}">وارد شوید</a>
-                {% endif %}
-                <a href="{% url 'index' %}" class="klkl">صفحه اصلی</a>
+            </div>
+            <div class="menuuuu">
+                <h3>معرفی</h3>
+                <a href="#a">CSS چیست ؟</a>
+                <a href="#b">هدف و کاربرد CSS چیست ؟</a>
+                <a href="#c">فایل CSS چیست ؟</a>
+                <a href="#d">CSS مخفف چیست ؟</a>
+                <a href="#e">کاربرد زبان CSS</a>
+                <h3>آموزش ها</h3>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
             </div>
         </div>
     </header>
 
     <main>
 
-        <div class="hello">
-
-            <div class="main">
-                <div class="gorilla">
-                    <img src="{% static './FilmPicture/cssddd.jpg' %}" alt="">
-                </div>
-                <div class="bear">
-                    <h3>CSS چیست ؟</h3>
-                    <p>در پاسخ به سوال CSS چیست باید گفت: در واقع CSS یک زبان کمکی برای توصیف عناصر ظاهری و بصری HTML می باشد، بدین معنا که شما با استفاده از CSS نمای سایت خود را بصورت سفارشی تر طراحی خواهید کرد. بنابراین همانطور که در مقاله HTML چیست اشاره نمودیم ما به کمک HTML ساختمان و اسکلت سایت را بنا نهاده و سپس با به کمک کد های CSS ظاهر و نمای سایت را طراحی می کنیم.</p>
-                </div>
-            </div>
-
-            <div class="main mainn">
-                <div class="bear" style="margin-left: 3rem;">
-                    <h3>هدف و کاربرد css چیست ؟</h3>
-                    <p>هدف از تولید css در واقع جداسازی اطلاعات محتوا (که توسط زبانی مانند HTML نوشته شده اند) از اطلاعات ظاهری مانند صفحه بندی، رنگ و سایز و نوع فونت می باشد. این جداسازی موجب افزایش سرعت در دسترسی به سایت، انعطاف پذیری بیشتر برای کنترل ویژگی های ظاهری، قابلیت طراحی چندین صفحه با یک فرمت یکسان و جلوگیری از پیچیدگی و انجام کارهای تکراری در طراحی وب سایت می گردد.</p>
-                </div>
-                <div class="gorilla">
-                    <img src="{% static './FilmPicture/css-01.jpg' %}" alt="">
-                </div>
-            </div>
-            
-            <div class="main">
-                <div class="gorilla">
-                    <img src="{% static './FilmPicture/cssghjj.jpg' %}" alt="">
-                </div>
-                <div class="bear">
-                    <h3>فایل css چیست؟</h3>
-                    <p>css با ایجاد فایل css. همچنین شما را قادر می سازد تا نمایش صفحه مورد نظر خود را در چندین حالت مختلف Rendering مانند حالت نمایش بر روی مانیتور، حالت نمایش در زمان چاپ، در زمان حالت شناسایی صدا ( برای مرورگرهای مبتنی بر قابلیت شناسایی صدا) و همچنین برای نمایش در صفحات مرورگر موبایل را به درستی تنظیم نمایید.</p>
-                </div>
-            </div>
-            
-            <div class="main mainn">
-                <div class="bear">
-                    <h3>Css مخفف چیست؟</h3>
-                    <p>واژه CSS مخفف cascading style sheets به معنی برگه های سبک آبشار یا برگه های آبشاری می باشد. به زبان CSS زبان برنامه نویسی ظاهری (Style Sheet Language) نیز می گویند.</p>
-                </div>
-                <div class="gorilla">
-                    <img src="{% static './FilmPicture/css-d.jpg' %}" alt="">
-                </div>
-            </div>
-            
-            <div class="main">
-                <div class="gorilla">
-                    <img src="{% static './FilmPicture/css1.jpg' %}" alt="">
-                </div>
-                <div class="bear">
-                    <h3>کاربرد زبان CSS</h3>
-                    <p>برگه‌های CSS در واقع مسئولیت ایجاد ظاهر سایت را به عهده دارند و رنگ، اندازه و محل قرارگیری متون و دیگر تگ‌ های تعریف شده در HTML را تعیین می نمایند.
-                        شما به کمک زبان CSS می توانید برای صفحه خود در مدیا های مختلف ویژگی های مختلفی در نظر بگیرید (ریسپانسیو سازی). بنابراین به کمک سی اس اس شما این قدرت را خواهید داشت که ظاهر وب سایت خودتان را به هر شکل دلخواهی درآورید.</p>
-                </div>
-            </div>
-
+        <div class="logiii">
+            <p class="user">{{ user.username }}</p>
         </div>
+
+            <div class="hello">
+
+                <div class="main" id="a">
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/cssddd.jpg' %}" alt="">
+                    </div>
+                    <div class="bear">
+                        <h3>CSS چیست ؟</h3>
+                        <p>در پاسخ به سوال CSS چیست باید گفت: در واقع CSS یک زبان کمکی برای توصیف عناصر ظاهری و بصری HTML می باشد، بدین معنا که شما با استفاده از CSS نمای سایت خود را بصورت سفارشی تر طراحی خواهید کرد. بنابراین همانطور که در مقاله HTML چیست اشاره نمودیم ما به کمک HTML ساختمان و اسکلت سایت را بنا نهاده و سپس با به کمک کد های CSS ظاهر و نمای سایت را طراحی می کنیم.</p>
+                    </div>
+                </div>
+
+                <div class="main mainn" id="b">
+                    <div class="bear" style="margin-left: 3rem;">
+                        <h3>هدف و کاربرد CSS چیست ؟</h3>
+                        <p>هدف از تولید css در واقع جداسازی اطلاعات محتوا (که توسط زبانی مانند HTML نوشته شده اند) از اطلاعات ظاهری مانند صفحه بندی، رنگ و سایز و نوع فونت می باشد. این جداسازی موجب افزایش سرعت در دسترسی به سایت، انعطاف پذیری بیشتر برای کنترل ویژگی های ظاهری، قابلیت طراحی چندین صفحه با یک فرمت یکسان و جلوگیری از پیچیدگی و انجام کارهای تکراری در طراحی وب سایت می گردد.</p>
+                    </div>
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/css-01.jpg' %}" alt="">
+                    </div>
+                </div>
+                
+                <div class="main" id="c">
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/cssghjj.jpg' %}" alt="">
+                    </div>
+                    <div class="bear">
+                        <h3>فایل CSS چیست؟</h3>
+                        <p>css با ایجاد فایل css. همچنین شما را قادر می سازد تا نمایش صفحه مورد نظر خود را در چندین حالت مختلف Rendering مانند حالت نمایش بر روی مانیتور، حالت نمایش در زمان چاپ، در زمان حالت شناسایی صدا ( برای مرورگرهای مبتنی بر قابلیت شناسایی صدا) و همچنین برای نمایش در صفحات مرورگر موبایل را به درستی تنظیم نمایید.</p>
+                    </div>
+                </div>
+                
+                <div class="main mainn" id="d">
+                    <div class="bear">
+                        <h3>CSS مخفف چیست؟</h3>
+                        <p>واژه CSS مخفف cascading style sheets به معنی برگه های سبک آبشار یا برگه های آبشاری می باشد. به زبان CSS زبان برنامه نویسی ظاهری (Style Sheet Language) نیز می گویند.</p>
+                    </div>
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/css-d.jpg' %}" alt="">
+                    </div>
+                </div>
+                
+                <div class="main" id="e">
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/css1.jpg' %}" alt="">
+                    </div>
+                    <div class="bear">
+                        <h3>کاربرد زبان CSS</h3>
+                        <p>برگه‌های CSS در واقع مسئولیت ایجاد ظاهر سایت را به عهده دارند و رنگ، اندازه و محل قرارگیری متون و دیگر تگ‌ های تعریف شده در HTML را تعیین می نمایند.
+                            شما به کمک زبان CSS می توانید برای صفحه خود در مدیا های مختلف ویژگی های مختلفی در نظر بگیرید (ریسپانسیو سازی). بنابراین به کمک سی اس اس شما این قدرت را خواهید داشت که ظاهر وب سایت خودتان را به هر شکل دلخواهی درآورید.</p>
+                    </div>
+                </div>
+
+            </div>
+
 
     </main>
 
