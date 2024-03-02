@@ -140,6 +140,18 @@ html{
     }
 }
 
+.video{
+    margin: 1rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.video p{
+    font-family: vazir-medium;
+    font-size: 120%;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
 
 
 /*footer*/
@@ -225,4 +237,9 @@ html{
     .footer{
         margin-left: 30%;
     }
+}
+.hheader .sing{
+    font-size: 20px;
+    font-family: "vazir-bold";
+    color: red;
 }

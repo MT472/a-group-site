@@ -279,3 +279,8 @@ hr{
     padding-bottom: .7rem;
     margin: 0 2rem;
 }
+.change p {
+    font-family: "vazir-bold";
+    font-size: 15px;
+
+}
