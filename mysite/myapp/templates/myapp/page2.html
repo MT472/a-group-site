@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS</title>
     <link rel="stylesheet" href="{% static './style/reset.css' %}">
     <link rel="stylesheet" href="{% static './style/font.css' %}">
     <link rel="stylesheet" href="{% static './style/pagesStyle.css' %}">
@@ -18,7 +18,7 @@
     <header class="header">
         <div class="hheader">
             <div class="icon logiii">
-                <img src="./FilmPicture/logo.png" alt="">
+                <img src="{% static './FilmPicture/logo.png' %}" alt="">
                 
             </div>
             <div class="menuuuu">
@@ -28,14 +28,17 @@
                 <a href="#c">فایل CSS چیست ؟</a>
                 <a href="#d">CSS مخفف چیست ؟</a>
                 <a href="#e">کاربرد زبان CSS</a>
+                {% if user.is_authenticated %}
                 <h3>آموزش ها</h3>
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
-                <a href="">5</a>
-                <a href="">6</a>
-                <a href="">7</a>
+                <a href="#ّf">آموزش 1</a>
+                <a href="#g">آموزش 2</a>
+                <a href="#h">آموزش 3</a>
+                <a href="#i">آموزش 4</a>
+                <a href="#j">آموزش 5</a>
+                <a href="#k">آموزش 6</a>
+                {% else %}
+                <a class="sing" href="{% url 'signup' %}">برای دسترسی به آموزش ها لطفا ابتدا ثبت نام کنید </a>
+                {% endif %}
             </div>
         </div>
     </header>
@@ -43,7 +46,10 @@
     <main>
 
         <div class="logiii">
-            <p class="user">{{ user.username }}</p>
+            {% if user.is_authenticated %}
+            <p class="user">سلام {{ user.username }}</p>
+            {% else %}
+            {% endif %}
         </div>
 
             <div class="hello">
@@ -97,6 +103,31 @@
                         <p>برگه‌های CSS در واقع مسئولیت ایجاد ظاهر سایت را به عهده دارند و رنگ، اندازه و محل قرارگیری متون و دیگر تگ‌ های تعریف شده در HTML را تعیین می نمایند.
                             شما به کمک زبان CSS می توانید برای صفحه خود در مدیا های مختلف ویژگی های مختلفی در نظر بگیرید (ریسپانسیو سازی). بنابراین به کمک سی اس اس شما این قدرت را خواهید داشت که ظاهر وب سایت خودتان را به هر شکل دلخواهی درآورید.</p>
                     </div>
+                </div>
+
+                <div class="video" id="f">
+                    <p>شما به اولین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb35.cdn.asset.aparat.com/aparat-video/a72d01131a06348aa59043beceefb06436483199-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6Ijk0N2JmYTRjYzg0ODM0YTUwNjAzYzNlMzczYTY2NTRmIiwiZXhwIjoxNzA5NDA2MjY3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.pG5s5cgTbZTm8STm6k4g7B6Xstz5FRIWvylLUc3iIcE" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="g">
+                    <p>شما به دومین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb33.cdn.asset.aparat.com/aparat-video/42a59fa0ffd8589a2f04ead9d349d30136767409-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImJlODUxOGYwNDZhNTI1MmIxNGRlOGVjMDBkZDI4YjdlIiwiZXhwIjoxNzA5NDA2MzAzLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.wCvdoGHyQwlP610koaGQ4bxN-mH6plIWNB8Jm8rmoNA" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="h">
+                    <p>شما به سومین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb28.cdn.asset.aparat.com/aparat-video/6666b869d6b2737817405dc22f5626f837092736-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjhmMDAwZjg1MmNmMTkzY2Y2ZjcxNTNiZGE5ZWY5NjIzIiwiZXhwIjoxNzA5NDA2MzM5LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.-L1HBaP8UyQVtyZ31Fpx3sdMW0HYhLkFrDxm-pw-whQ" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="i">
+                    <p>شما به چهارمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb32.cdn.asset.aparat.com/aparat-video/a053ba6ba8afcd0a90aa70d9077fe7c437419706-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjJlYjhlZWI2ZDQyODMxMmI5Yzg3Y2Y2MmRiNGFkMTE0IiwiZXhwIjoxNzA5NDA2NDMzLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.xn0ELqdR12Yy7xJA_8Fro7mTN2izpkUqS5jizwmglIE" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="j">
+                    <p>شما به پنجمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb30.cdn.asset.aparat.com/aparat-video/71682f79b09b724ccfcf2f0fd87182cb37864237-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImFhNzJjZmFmMjc0MjkxMWY0MWIzODJhMGVlZmIxNDhjIiwiZXhwIjoxNzA5NDA2NDY1LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.gzuuQJtdIa-XhVIPb3m290qSh-UVEgEelw0cliYvrhE" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="k">
+                    <p>شما به ششمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb28.cdn.asset.aparat.com/aparat-video/b66f314440412bb28b8257f2890fd99a38038799-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImVkMzZiNDI3ZWYwYjMzOTQ1YmNjOTA4YjNiNDFhNzhhIiwiZXhwIjoxNzA5NDA2NTAwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.HaREGExd8QykX6D0uWjuSR1k7lLN_madxqDljUtKxnM" type="video" controls="controls"></video>
                 </div>
 
             </div>

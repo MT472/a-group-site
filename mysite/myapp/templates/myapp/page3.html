@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS</title>
     <link rel="stylesheet" href="{% static './style/reset.css' %}">
     <link rel="stylesheet" href="{% static './style/font.css' %}">
     <link rel="stylesheet" href="{% static './style/pagesStyle.css' %}">
@@ -18,7 +18,7 @@
     <header class="header">
         <div class="hheader">
             <div class="icon logiii">
-                <img src="./FilmPicture/logo.png" alt="">
+                <img src="{% static './FilmPicture/logo.png' %}" alt="">
                 
             </div>
             <div class="menuuuu">
@@ -28,14 +28,28 @@
                 <a href="#c">کاربرد جاوا اسکریپت در دنیای برنامه نویسی چیست ؟</a>
                 <a href="#d">جاوا اسکریپت چگونه کار میکند ؟</a>
                 <a href="#e">تاریخچه زبان جاوا اسکریپت چیست ؟</a>
+                {% if user.is_authenticated %}
                 <h3>آموزش ها</h3>
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
-                <a href="">5</a>
-                <a href="">6</a>
-                <a href="">7</a>
+                <a href="#ّf">آموزش 1</a>
+                <a href="#g">آموزش 2</a>
+                <a href="#h">آموزش 3</a>
+                <a href="#i">آموزش 4</a>
+                <a href="#j">آموزش 5</a>
+                <a href="#k">آموزش 6</a>
+                <a href="#l">آموزش 7</a>
+                <a href="#m">آموزش 8</a>
+                <a href="#n">آموزش 9</a>
+                <a href="#o">آموزش 10</a>
+                <a href="#p">آموزش 11</a>
+                <a href="#q">آموزش 12</a>
+                <a href="#r">آموزش 13</a>
+                <a href="#s">آموزش 14</a>
+                <a href="#t">آموزش 15</a>
+                <a href="#u">آموزش 16</a>
+                <a href="#v">آموزش 17</a>
+                {% else %}
+                <a class="sing" href="{% url 'signup' %}">برای دسترسی به آموزش ها لطفا ابتدا ثبت نام کنید </a>
+                {% endif %}
             </div>
         </div>
     </header>
@@ -43,7 +57,10 @@
     <main>
 
         <div class="logiii">
-            <p class="user">{{ user.username }}</p>
+            {% if user.is_authenticated %}
+            <p class="user">سلام {{ user.username }}</p>
+            {% else %}
+            {% endif %}
         </div>
 
             <div class="hello">
@@ -108,6 +125,75 @@
                         <h3>تاریخچه زبان Java Script چیست؟</h3>
                         <p>جاوا اسکریپت اولین بار در می‌1995 در 10 روز توسط برندن ایچ، یکی از کارکنان شرکت Netscape متولد شد! در ابتدا این شرکت به این نتیجه رسیده بود که به صفحات وب پویا و جذاب‌تری احتیاج دارد. این اولین قدم به سوی ساخت زبانی ساده بود. آقای براندان ایچ از طرف این شرکت مامور شد که زبانی اسکریپتی برای صفحات وب و دست بردن در کدهای HTML بسازد. ماموریت آقای ایچ این بود زبانی را ارائه کند که نه تنها متخصصان برنامه نویسی از آن استقبال کنند، بلکه به راحتی مورد استفاده طراحان هم باشد.</p>
                     </div>
+                </div>
+
+                <div class="video" id="f">
+                    <p>شما به اولین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb3.cdn.asset.aparat.com/aparat-video/9d5eaad818f023006f74448f421df50b15615523-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjVlNzIxZjYwMWVmMmI2ZGJhYjJmZmM4ZTFjMDQyYzVmIiwiZXhwIjoxNzA5NDA0MTUxLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.mq71T6t7KSfM5-KYju64zs1XrgFb1mST2zgH3yAmyfg" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="g">
+                    <p>شما به دومین مرحله ی آموزش ما رسیدید :</p>
+                    <video src=https://aspb15.cdn.asset.aparat.com/aparat-video/65b0c36ccbd01122d6002e3402a51df915679608-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjQ0NTUzNTc5OTQ3ZDZjMzNiMTI4MGI2NjRjMGQyMTdiIiwiZXhwIjoxNzA5NDA0MjIwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.u6rBYccpsPSP7yNPp3WRYqloadADEMb-1w05HuivZPA"" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="h">
+                    <p>شما به سومین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb13.cdn.asset.aparat.com/aparat-video/3bd03754c040364c399004c99423938d15712392-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjYxNzI1NTM3ZjE0OThiMjk4ODRmMjlkOWMwODZlOWJlIiwiZXhwIjoxNzA5NDA0MzA2LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.ixfKpXEKtTQILEZ2U0VYPXcLYvK5JvaAto8hL1RTY3g" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="i">
+                    <p>شما به چهارمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb15.cdn.asset.aparat.com/aparat-video/eea3a493c05daa98123127523026931a15774200-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjJjZmI1N2FkMTk3YTc4MTg2NGZhZTNiODZmMzU4NDI0IiwiZXhwIjoxNzA5NDA0MzYxLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.1z3o1EU-6EOutQnOuoYRsVLppm1ovYf-Tq39O7u_47E" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="j">
+                    <p>شما به پنجمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb2.cdn.asset.aparat.com/aparat-video/74a05fba55ec1d076a93d30198bacc6f16218923-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMxMmZhZGViNjEzNzNmYWZhZGUwMTdmZDMzYWEzZGRiIiwiZXhwIjoxNzA5NDA0NDk1LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.YIYxTVFbwUzogoWHediX5Zb1rrCj3BT5I9cB1B4zuKU" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="k">
+                    <p>شما به ششمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb2.cdn.asset.aparat.com/aparat-video/6d948b30c9cbc24f90ec04b7b1153e3915887073-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjQ0MDJiY2JhMWFhYzIyNjZkNjU1NzMxZDcyM2M0MTdiIiwiZXhwIjoxNzA5NDA0NTM4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.vl1sT4d_p9jgQitOgXnWmXV7Uzag36zq3d4H7FEo_3M" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="l">
+                    <p>شما به هفتمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb3.cdn.asset.aparat.com/aparat-video/b3f9ce3990eb135eb41f45f51e98212515954077-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQzYzBmNjhmMzVjOTY4MDYzYjZmY2NkMmUzMWRhMjhjIiwiZXhwIjoxNzA5NDA0NTc3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.hyj14olETpyQPFKmMRlz503oh_ZSOxW_PLlm2uE4eBk" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="m">
+                    <p>شما به هشتمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb1.cdn.asset.aparat.com/aparat-video/9027e0016d26d00f1157ff4ea1218b5f15991840-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQ2NTI2Nzk1ZjUxMzlmMjAwYWJhYmI3Y2EwMGY1Yjc4IiwiZXhwIjoxNzA5NDA0NjI1LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.0jA8SyObUUCgg1l4pZFnGgmUJRG7AvzJk3IPGZeKO3M" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="n">
+                    <p>شما به نهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb15.cdn.asset.aparat.com/aparat-video/6d86ba1b208e0e262e77a340d2ee582616200310-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwZTQwMGVmY2VkZGNiOTQxNzQ2NDkzNzM2ZjdmZDdkIiwiZXhwIjoxNzA5NDA0NjY1LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.5Eyiatj75EX5JbU-EXYQpozjzJ7sfTbpsn4y8SKi0Z8" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="o">
+                    <p>شما به دهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb10.cdn.asset.aparat.com/aparat-video/3f9d87c95873dd3d284c9156f19f7b2c16411761-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjE2MjFmMjhiYzc0YmQ5OTVmZDNiODE1NWIzNDJjNDIyIiwiZXhwIjoxNzA5NDA0NzA3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.-kJqs6jvnI1BelQnQH7kR4apNbqataJxaxmKbTVo0WU" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="p">
+                    <p>شما به یازدهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb3.cdn.asset.aparat.com/aparat-video/d72594a516b53192f57d9f3ba9c82f0616147120-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMzZDQ3ZWU3MjQyNWEyMjljYzM1MjFiY2FlZTM3M2RjIiwiZXhwIjoxNzA5NDA0NzUxLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.pEl8BRblBkIpFKA2hiBh30kZTGc_tv1d0-jyuKodHmg" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="q">
+                    <p>شما به دوازدهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb2.cdn.asset.aparat.com/aparat-video/f8aac2ee413b01aef536fc126817836816212431-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjVlM2JlZWI5NjFmZDkzYTc3MjdjZDVmNmE0NjExNTc0IiwiZXhwIjoxNzA5NDA0Nzk4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.KegE66zutzXxxNTMchP1TBxIoL6CJoWfy63FeCWR_aw" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="r">
+                    <p>شما به سیزدهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb10.cdn.asset.aparat.com/aparat-video/fb45a7c1a5bb19472e6a7a104863c79616413089-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImIyNjg5MTUwYTM3Nzc2ZDViZWE0NjkwN2JhMTA3YzZjIiwiZXhwIjoxNzA5NDA0ODM3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.qD4hkJzO1aw0k8IkbfXGW_QEf_w-MPgKtSGgpxOX_W0" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="s">
+                    <p>شما به چهاردهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb1.cdn.asset.aparat.com/aparat-video/1424eea620571359001627933a399a4816444605-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjFhYWRiY2FkYzAxZDc4NzRjZjNlZjQwMTM1YzEzNjBiIiwiZXhwIjoxNzA5NDA0ODgyLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.ijyk8_va-5aPdwWv43MxXLIAdC0dC5c-aImAiY4miY0" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="t">
+                    <p>شما به پانزدهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb11.cdn.asset.aparat.com/aparat-video/de81299c75a1acb42811dc691c58e92d16445002-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjMwNWQxZDczNWNjMzE1NTVmMzU2NmE3ZDUyZTU0NzM0IiwiZXhwIjoxNzA5NDA0OTMzLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.PlUfmlOu58EB4xQXLCWOq9ht3Cry7gPjwiyiXPV8H3s" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="u">
+                    <p>شما به شانزدهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb15.cdn.asset.aparat.com/aparat-video/2ad11ed144013f558998d875bcb10d7416450512-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjEwMjk2NjI3NzIwMTRiNjI4MjkzNThhMDcyYmViODViIiwiZXhwIjoxNzA5NDA1MDAzLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.6ATzQpMeO_R0w1dhSLan7hTQTb-gpd4xhXc7bOdE7jc" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="v">
+                    <p>شما به هفدهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://aspb3.cdn.asset.aparat.com/aparat-video/21c7c852cd2f0a66134970b5c5668d3d17068051-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjkzNzM4MjczOTllMDI1YWQ4ZTNjYjQyNGRlNzcxYWViIiwiZXhwIjoxNzA5NDA1MDQ1LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.n7C_odnkV4BPVmT2-lOKBPhiSnvXs1sn_EzHu5HKDg0" type="video" controls="controls"></video>
                 </div>
 
             </div>

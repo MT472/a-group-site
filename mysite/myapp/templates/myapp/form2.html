@@ -15,6 +15,7 @@
     <div class="lol">
         <div class="banana">
             <form class="form" action="#" method="POST">
+                {% csrf_token %}
                 <h2 class="form-tytle">فرم ثبت نام</h2>
                 <label for="name">نام کاربری</label>
                 <input type="text" name="username" id="username" class="form-control" placeholder="لطفا نام را وارد کنید" required {{form.username}}>

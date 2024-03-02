@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Django</title>
     <link rel="stylesheet" href="{% static './style/reset.css' %}">
     <link rel="stylesheet" href="{% static './style/font.css' %}">
     <link rel="stylesheet" href="{% static './style/pagesStyle.css' %}">
@@ -18,7 +18,7 @@
     <header class="header">
         <div class="hheader">
             <div class="icon logiii">
-                <img src="./FilmPicture/logo.png" alt="">
+                <img src="{% static './FilmPicture/logo.png' %}" alt="">
                 
             </div>
             <div class="menuuuu">
@@ -28,14 +28,21 @@
                 <a href="#c">چرا جنگو (Django) برای توسعه وب مناسب است؟</a>
                 <a href="#d">پیش نیازهای لازم برای یادگیری جنگو (django) چیست؟</a>
                 <a href="#e">جنگو (Django) برای چه کارهایی مورد استفاده قرار می‌گیرد؟</a>
+                {% if user.is_authenticated %}
                 <h3>آموزش ها</h3>
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
-                <a href="">5</a>
-                <a href="">6</a>
-                <a href="">7</a>
+                <a href="#ّf">آموزش 1</a>
+                <a href="#g">آموزش 2</a>
+                <a href="#h">آموزش 3</a>
+                <a href="#i">آموزش 4</a>
+                <a href="#j">آموزش 5</a>
+                <a href="#k">آموزش 6</a>
+                <a href="#l">آموزش 7</a>
+                <a href="#m">آموزش 8</a>
+                <a href="#n">آموزش 9</a>
+                <a href="#o">آموزش 10</a>
+                {% else %}
+                <a class="sing" href="{% url 'signup' %}">برای دسترسی به آموزش ها لطفا ابتدا ثبت نام کنید </a>
+                {% endif %}
             </div>
         </div>
     </header>
@@ -43,7 +50,10 @@
     <main>
 
         <div class="logiii">
-            <p class="user">{{ user.username }}</p>
+            {% if user.is_authenticated %}
+            <p class="user">سلام {{ user.username }}</p>
+            {% else %}
+            {% endif %}
         </div>
 
             <div class="hello">
@@ -98,6 +108,47 @@
                         <h3>جنگو (Django) برای چه کارهایی مورد استفاده قرار می‌گیرد؟</h3>
                         <p>فریم‌ورک Django نام خود را مدیون گیتاریست جاز، Django Reinhardt، است که با وجود اینکه دو انگشتش پس از یک تصادف فلج شده بود، می‌توانست با گیتار خود قطعه‌های خیره‌کننده‌ای را اجرا کند. فریم‌ورک جنگو نیز می‌تواند وظایف متعددی را انجام دهد. </p>
                     </div>
+                </div>
+
+                <div class="video" id="f">
+                    <p>شما به اولین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://persian7.cdn.asset.aparat.com/aparat-video/1f88bc5777209990f9976605b9085a1f52693209-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjVjZTMyZDk1MDhlZDEzZTA5MzQzYzJjOGM0NjlhMGI5IiwiZXhwIjoxNzA5NDAzNTYyLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.ABl-CMqRO4HhGvXtXgrs6C7fA21_OWPtX7VmXd88R6w" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="g">
+                    <p>شما به دومین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://caspian9.cdn.asset.aparat.com/aparat-video/1ee06e0f462865ae96f56ff558c825b352693294-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjFiZjY3ZTMyZmU3YTI5NzRlODIyYjk3Nzk1M2NkNjI0IiwiZXhwIjoxNzA5NDAzNjA4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.z5Vgu_JP3yQUgm-6LTegLr7hECTzpkmnKZ64YLskrYc" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="h">
+                    <p>شما به سومین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://persian8.cdn.asset.aparat.com/aparat-video/8f6ab810ea5daafc853bbda23f9aa0c352739872-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjQ4NzkxMWMzNzUwZjk2YzhhZjM4NDkzMTE4YWZiYmE0IiwiZXhwIjoxNzA5NDAzNzIzLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.TSVyPpx4N0-pbm20vCtSnZZymsYgDqazrBZ4HJQBuTU" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="i">
+                    <p>شما به چهارمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://persian6.cdn.asset.aparat.com/aparat-video/50eaef94876cc08418a3987ebfa9d2c752877504-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImM0ZWRmZTY4NmNhNjY1MGZiY2I0NDJmOGIwM2JiODZiIiwiZXhwIjoxNzA5NDAzNzcxLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9._RgG2b_T9mutn6rLhWb8-FNUIrCTK2kkeBwyedl8HAo" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="j">
+                    <p>شما به پنجمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://caspian7.cdn.asset.aparat.com/aparat-video/f1ab6c814ac601e36065564de4ae369252918764-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImM4MjUyNmEzNDAyYmJlOWEyYjVkODc1ZDViYzg1MGEzIiwiZXhwIjoxNzA5NDAzODMzLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.Y-R4seR_Fs_8e8RM4BBOZQmlcDT-WmmBzI2DJ3i7gWQ" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="k">
+                    <p>شما به ششمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://persian8.cdn.asset.aparat.com/aparat-video/2172724defdf2126da50efaa8dbbc41952940209-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImY4MDhlZWIyMTM0YjZiYzI4MTJiNzU0ZmI0NGU2ZjMwIiwiZXhwIjoxNzA5NDAzOTA4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.N2ROzSOG7QAUN7EOSOiVPek5RbhHFK22gDlgVbVyQMQ" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="l">
+                    <p>شما به هفتمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://persian9.cdn.asset.aparat.com/aparat-video/3b62814334d266a83633d470a6c644c652940246-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjRlMjk4NTIzMjk3YjJhYzMyY2Y4ZmVmOWJiNDVjYTMxIiwiZXhwIjoxNzA5NDAzOTQ4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.tqBUAr-_c5ivZ13-bhhbxUwyoG_-eYzFvCArfRgi058" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="m">
+                    <p>شما به هشتمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://caspian7.cdn.asset.aparat.com/aparat-video/dffab6402ae670286b49c4a50db5d35f52940258-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQ4M2U3ZTNhNWRlOGRkZDY2NGQ2MmY2NDYwNDg4NTQ4IiwiZXhwIjoxNzA5NDAzOTg4LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.ESNlYR0vONo8OytScwmhOM1cjHNWECesSyMeaigsGhc" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="n">
+                    <p>شما به نهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://persian6.cdn.asset.aparat.com/aparat-video/dda6eb45d8ca88d15bc0117cf087dd7152761228-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjE4NjY0OTRjZDJlZmMzZTM4MDIwZWU4OTRkZDZjYjBjIiwiZXhwIjoxNzA5NDA0MDI5LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.en2tj70wpOpG7ziq0WSagV5Sk49rdVOSMuAE_NyoyVg" type="video" controls="controls"></video>
+                </div>
+                <div class="video" id="o">
+                    <p>شما به دهمین مرحله ی آموزش ما رسیدید :</p>
+                    <video src="https://persian6.cdn.asset.aparat.com/aparat-video/45772b5a2d1d8f59386fa0174982e72852940385-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjIyNGU4NzM2Y2VhNTBlNWNhMjBiYTAyOGFmYjYzNTNkIiwiZXhwIjoxNzA5NDA0MDc3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.TZ12fwgtCt50tpSmqkeM1R5XfFMjbm0ueypLkRnD-2c" type="video" controls="controls"></video>
                 </div>
 
             </div>
