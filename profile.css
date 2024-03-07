@@ -1,0 +1,60 @@
+html{
+    font-family: vazir-medium;
+    direction: rtl;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*main*/
+
+.main{
+    width: 100%;
+    background: url(../FilmPicture/yes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+}
+.you{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 3rem;
+    border-radius: 20px;
+    flex-direction: column;
+    align-content: center;
+    width: 70%;
+    background-color: #ffd6d6;
+}
+.you h3{
+    font-size: 90%;
+    font-family: vazir-medium;
+    line-height: 1.5;
+}
+.you img{
+    align-self: center;
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.you .oo{
+    padding-top: 1.5rem;
+}
+.you a{
+    margin: 1rem 0 1;
+    padding: 1.5rem 3rem;
+    border-radius: 9px;
+    background-color: #1f1f1f;
+    text-decoration-line: none;
+    font-size: 100%;
+    color: #fff;
+    display: inline-block;
+}
+
+@media (max-width:566px) {
+    .you{
+        width: 100%;
+    }
+    .main{
+        background:#ffd6d6 ;
+    }
+}

@@ -1,0 +1,46 @@
+html{
+    font-family: vazir-medium;
+    direction: rtl;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*main*/
+
+.main{
+    background-color: rgb(141, 250, 141);
+    height: 100vh;
+}
+.server{
+    border-bottom: solid 2px green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 2rem 2rem 0;
+}
+.server img{
+    width: 4rem;
+    border-radius: 50%;
+}
+.server p {
+    font-size: 100%;
+    font-family: vazir-bold;
+    margin-right: 1rem;
+}
+.chat input{
+    width: 80%;
+    margin: 4rem 10%;
+    padding: 1rem 1rem 10rem 0;
+    border: solid 2px #1f1f1f;
+    border-radius: 20px;
+}
+.chat a{
+    background-color: #1f1f1f;
+    color: #fff;
+    text-decoration-line: none;
+    padding: 1.5rem 3rem;
+    margin-right: 10%;
+    border-radius: 15px;
+
+}
