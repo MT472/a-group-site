@@ -66,6 +66,7 @@ body{
     color: #1f1f1f;
     margin-bottom: 4rem;
     text-align: right;
+    
 }
 
 .form label{
@@ -116,7 +117,9 @@ body{
     position: relative;
     padding: .3rem 2.2rem 1rem 0;
 }
-
+.form .form-tytle .btn{
+    cursor: pointer;
+}
 input:invalid{
     background: #fff !important;
     border: 2px solid #1f1f1f !important;
@@ -171,7 +174,9 @@ input.form-control{
     color: #1f1f1f;
     border: 3px solid #179e7e;
     margin-top: 2rem;
+    cursor: pointer;
 }
+
 
 .forget{
     display: flex;

@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
 from .forms import SignupForm,LoginForm
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.contrib import messages
@@ -38,7 +38,9 @@ def user_login(request):
     else:
         form =LoginForm()
     return render(request,'myapp/form1.html',{'form':form})
-
+def user_logout(request):
+    logout(request)
+    return render(request,"myapp/logout.html")
 def aboutus(request):
     return render(request,'myapp/aboutUs.html')
 

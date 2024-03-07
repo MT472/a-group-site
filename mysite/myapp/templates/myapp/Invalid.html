@@ -1,10 +1,15 @@
 {% load static %}
-<html>
-    
-    <link rel="stylesheet" href="{% static './style/form.css' %}">
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './style/invalid.css' %}">
+    <title>Invalid</title>
+</head>
+<body>
 {% csrf_token %}
 <h1 class='invalidh1'>نام کار بری یا رمز عبور اشتباه است</h1>
-<button class='invalid'><a class='invalida' href="{% url 'login' %}">بازگشت به صفحه لاگین</a></button>
-    </body>
+<a class='invalida' href="{% url 'login' %}">بازگشت به صفحه لاگین</a>
+</body>
 </html>

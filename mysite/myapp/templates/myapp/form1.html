@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static './style/font.css' %}">
     <link rel="stylesheet" href="{% static './style/reset.css' %}">
     <link rel="stylesheet" href="{% static './style/form.css' %}">
+    <link rel="stylesheet" href="{% static './style/password-change.css' %}">
 
 </head>
 
@@ -31,6 +32,16 @@
                         
                     <div>
                         <a href="{% url 'password_reset'%}">بازیابی رمز عبور</a>
+                    </div>
+                </div>
+            </br>
+                <div class="password-change">
+                    <div>
+                        <p> میخواهید رمز عبورتان را تغییر دهید؟ </p>
+                    </div>
+                        
+                    <div>
+                        <a href="{% url 'password_change'%}">تغییر رمز عبور</a>
                     </div>
                 </div>
             </form>

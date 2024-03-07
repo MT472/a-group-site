@@ -113,36 +113,22 @@
                 <img src="{% static './FilmPicture/gifffff.svg' %}" alt="">
             </div>
         </div>
-        <hr class="hr">
         <div class='change'>
-            {% if user.is_authenticated %}
-            <div class='change-password'>
-                <p>میخواهید رمز عبورتان را تغییر دهید؟</p>
-                </div>
-                
-                <div>
-                    <a href="{% url 'password_change'%}">تغیر رمز عبور</a>
-                </div>
-            </div>
-            <div>
-                <p>رمز عبور را فراموش کرده اید؟  </p>
-            </div>
-            
-            <div>
-                <a href="{% url 'password_reset'%}">بازیابی رمز عبور</a>
-            </div>
+        {% if user.is_authenticated %}
             {% else %}
+            <hr class="hr">
             <div class="join">
             <h1>به ما بپیوندید و عضوی از ما شوید</h1>
             <center><a href="{% url 'signup' %}">شروع کنید</a></center>
             {% endif %}
         </div>
     </main>
+    
     <footer class="footer">
         <div class="ffooter">
             <div class="iconn">
-                <img src="{% static './FilmPicture/Bale.png' %}" alt="">
-                <h3>تیم ما</h3>
+                <img src="{% static './FilmPicture/Untitled.png' %}" alt="">
+                <h3>درخشان</h3>
             </div>
             <div class="team">
                 <h3>تیم ما</h3>
@@ -156,6 +142,14 @@
             <div class="telegram">
                 <a href="#"><img src="{% static './FilmPicture/Telegram.jpg' %}" alt=""></a>
             </div>
+        </div>
+        <div class="iconnn">
+            <p>شماره تماس :</p>
+            <p>09038520178</p>
+        </div>
+        <div class="iconnn">
+            <p>آدرس :</p>
+            <p>تهران  افسریه  قصر فیروزه ٢ _ بلوک ١٤١</p>
         </div>
         <div class="c">
             <p>برای استفاده از مطالب ما، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای تیم ما است.</p>

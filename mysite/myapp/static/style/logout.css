@@ -95,9 +95,9 @@ header .logiii a{
 
 /*footer*/
 
-
 .footer{
     background-color: #1f1f1f;
+    margin-left: 20%;
 }
 .ffooter{
     display: flex;
@@ -105,17 +105,28 @@ header .logiii a{
     align-items: center;
     align-content:space-between ;
 }
-.ffooter .iconn{
+.iconn{
     display: flex;
     width: 50%;
     flex-direction: row;
     margin: 1.5rem 1rem 2.5rem 0;
 }
-.ffooter .iconn h3{
+.iconn h3{
     color: #fff;
 }
+.iconnn{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    margin: 0 1rem .5rem 0;
+}
+.iconnn p{
+    color: #fff;
+    padding-left: 1rem;
+    font-size: 75%;
+}
 .ffooter .iconn img{
-    width: 3rem;
+    width: 4rem;
     margin-left: .5rem;
 } 
 .ffooter .team{
@@ -146,5 +157,39 @@ header .logiii a{
     color: #fff;
     text-align: center;
     padding-bottom: .7rem;
-    margin: 0 2rem;
+    margin: 2rem 2rem 0;
+}
+
+
+@media (max-width:968px) {
+    .menuuuu a{
+        font-size: 80%;
+    }
+    .menuuuu h3{
+        font-size: 100%;
+    }
+}
+@media (max-width:768px) {
+    .menuuuu a{
+        font-size: 60%;
+    }
+    .menuuuu h3{
+        font-size: 80%;
+    }
+}
+@media (max-width:568px) {
+    .menuuuu{
+        width: 30%;
+    }
+    .icon{
+        width: 70%;
+    }
+    .footer{
+        margin-left: 30%;
+    }
+}
+.hheader .sing{
+    font-size: 20px;
+    font-family: "vazir-bold";
+    color: red;
 }
