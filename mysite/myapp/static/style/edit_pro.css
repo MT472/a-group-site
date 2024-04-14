@@ -1,0 +1,23 @@
+.form{
+    direction: rtl;
+}
+.form input{
+    border-color: rgb(6, 7, 85);
+    margin-right: 700px;
+}
+.form label{
+    margin-top: 50px;
+    margin-right: 700px;
+}
+.form button{
+    margin-right: 750px;
+}
+.text{
+    font-family: 'vazir-bold';
+    font-size: 50px;
+    margin-left: 495px;
+    margin-top: 200px;
+}
+.btn{
+    margin-left: 675px;
+}

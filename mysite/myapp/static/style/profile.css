@@ -30,19 +30,11 @@ html{
     font-family: vazir-medium;
     line-height: 1.5;
 }
-.you hr{
-    width: 60%;
-    color: #1f1f1f;
-    
-}
 .you img{
     align-self: center;
     width: 20%;
     border-radius: 50%;
-}
-.you h1{
-    font-size: 140%;
-    font-family: vazir-bold ,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2rem;
 }
 .you .oo{
     padding-top: 1.5rem;

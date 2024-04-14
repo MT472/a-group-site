@@ -1,18 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/font.css">
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/chat.css">
+    <title>chat</title>
+    <link rel="stylesheet" href="{% static './style/font.css' %}">
+    <link rel="stylesheet" href="{% static './style/reset.css' %}">
+    <link rel="stylesheet" href="{% static './style/chat.css' %}">
 </head>
 
 <body>
     <div class="main">
         <div class="server">
-            <img src="./FilmPicture/malek.jpg" alt="">
+            <img src="{% static './FilmPicture/malek.jpg' %}" alt="">
             <p>محمد حسین ملک محمدی</p>
         </div>
         <div class="chat">

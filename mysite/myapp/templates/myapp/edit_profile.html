@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static './style/edit_pro.css' %}">
+    <title>edit</title>
+</head>
+<body>
+    <form class="form" method='POST' enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <label class="label">نام کاربری</label>
+        <input class="input form-control" {{user_form.username}}>
+        </br>
+
+        <label class="label">ایمیل</label>
+        <input class="input form-control input-lg" {{user_form.email}}>
+        </br>
+    </br>
+        <button class="btn btn-neutral" type='submit'>بروز رسانی</button>
+    </form>
+</body>
+</html>

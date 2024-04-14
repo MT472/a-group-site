@@ -1,3 +1,4 @@
+{% load widget_tweaks %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="{% static './style/font.css' %}">
     <link rel="stylesheet" href="{% static './style/reset.css' %}">
     <link rel="stylesheet" href="{% static './style/form.css' %}">
+    <script src="https://unpkg.com/htmx.org@1.6.0"></script>
     <link rel="stylesheet" href="{% static './style/password-change.css' %}">
 
 </head>
@@ -18,22 +20,17 @@
             <form class="form" action="#" method="POST">
                 {% csrf_token %}
                 <h2 class="form-tytle">فرم ثبت نام</h2>
-                <label for="name">نام</label>
-                <input type="text" name="firstname" id="firstname" class="form-control" placeholder="لطفا نام خود را وارد کنید" required>
-                <label for="name">نام خانوادگی</label>
-                <input type="text" name="lastname" id="lastname" class="form-control" placeholder="لطفا نام خانوادگی خود را وارد کنید" required>
-                <label for="name">نام کاربری</label>
-                <input type="text" name="username" id="username" class="form-control" placeholder="لطفا نام کاربری را وارد کنید" required {{form.username}}>
-                <label for="email">ایمیل</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="لطفا ایمیل را وارد کنید" required {{form.email}}>
-                <label for="password">رمز عبور</label>
-                <input type="password" name="password" id="password" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="8" {{form.password}}>
+                <label class="label" for="name">نام کاربری</label>
+                <input class="form-control" {% render_field form.username.value class="form-control" hx-post="/check_username/" hx-trigger="keyup" hx-swap="outherhtml" hx-target="#username-error" %}>
+                <div id="username-error"></div>
+                <label class="label" for="email">ایمیل</label>
+                <input class="form-control" {% render_field form.email.value class="form-control" hx-post="/check_email/" hx-trigger="keyup" hx-swap="outherhtml" hx-target="#email-error" %}>
+                <div id="email-error"></div>
+                <label class="label" for="password">رمز عبور</label>
+                <input class="form-control" {% render_field form.password.value class="form-control" hx-post="/check_password/" hx-trigger="keyup" hx-swap="outherhtml" hx-target="#password-error" %}>
+                <div id="password-error"></div>
                 <label for="confirm-password">تکرار رمز عبور</label>
-                <input type="password2" name="password2" id="password2" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="8" {{form.password2}}>
-                <label for="name">شغل</label>
-                <input type="text" name="job" id="job" class="form-control" placeholder="لطفا شغل خود را وارد کنید" required {{form.username}}>
-                <label for="name">شماره همراه</label>
-                <input type="text" name="phonenumber" id="phonenumber" class="form-control" placeholder="لطفا شماره همراه خود را وارد کنید" required {{form.username}}>
+                <input type="password2" name="password2" id="password2" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="8" {{form.password2.value}}>
                 <label for="rules" class="checkbox">
                     <input type="checkbox" name="rules" id="rules" required>قوانین را قبول دارم
                     <span class="checkmark"></span>

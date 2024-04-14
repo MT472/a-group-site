@@ -1,5 +1,17 @@
-<form method='POST'>
-    {% csrf_token %}
-
-    <button type='submit'>update</button>
-</form>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static './style/edit_pro.css' %}">
+    <title>edit_complete</title>
+</head>
+<body>
+    <h2 class="text">پروفایل شما با موفقیت تغییر کرد</h2>
+    </br>
+    <a class="btn btn-neutral" href="{% url 'index' %}">بازگشت به صفحه اصلی</a>
+</body>
+</html>

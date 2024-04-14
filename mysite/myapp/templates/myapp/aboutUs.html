@@ -19,7 +19,7 @@
             </div>
             <div class="logiii">
                 {% if user.is_authenticated %}
-                <a href="{% url 'logout' %}">logout</a>
+                <a href="{% url 'logout' %}">خروج</a>
                 <p class="user">سلام {{ user.username }}</p>
                 {% else %}
                     <a href="{% url 'signup' %}">ثبت نام</a>
@@ -32,7 +32,8 @@
     <main class="main">
 
         <div class="chatImg" style="position: absolute; top:85vh ; right:1vw ; position: fixed;">
-            <img src="./FilmPicture/chat.png" alt="" style="width: 6%;">
+       
+        </div>
         </div>
         
         <div class="mainn">
@@ -54,7 +55,7 @@
                 <div class="eden">
                     <img src="{% static './FilmPicture/eden.jpg' %}" alt="">
                     <h2>سید طاها موسوی</h2>
-                    <p>در حال کار روی بک اند و الگوریتم زن گروه</p>
+                    <p>...</p>
                 </div>
             </div>
         </div>

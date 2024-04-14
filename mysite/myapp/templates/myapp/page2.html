@@ -14,6 +14,22 @@
 </head>
 
 <body>
+    {% load static %}
+<!DOCTYPE>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="{% static './style/reset.css' %}">
+    <link rel="stylesheet" href="{% static './style/font.css' %}">
+    <link rel="stylesheet" href="{% static './style/pagesStyle.css' %}">
+
+</head>
+
+<body>
     
     <header class="header">
         <div class="hheader">
@@ -181,6 +197,168 @@
         <div class="iconnn">
             <p>آدرس :</p>
             <p>تهران  افسریه  قصر فیروزه ٢ _ بلوک ١٤١</p>
+        </div>
+        <div class="c">
+            <p>برای استفاده از مطالب ما، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای تیم ما است.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+    <header class="header">
+        <div class="hheader">
+            <div class="icon logiii">
+                <img src="{% static './FilmPicture/logo.png' %}" alt="">
+                
+            </div>
+            <div class="menuuuu">
+                <h3>معرفی</h3>
+                <a href="#a">CSS چیست ؟</a>
+                <a href="#b">هدف و کاربرد CSS چیست ؟</a>
+                <a href="#c">فایل CSS چیست ؟</a>
+                <a href="#d">CSS مخفف چیست ؟</a>
+                <a href="#e">کاربرد زبان CSS</a>
+                {% if user.is_authenticated %}
+                <h3>آموزش ها</h3>
+                <a href="#f">آموزش 1</a>
+                <a href="#g">آموزش 2</a>
+                <a href="#h">آموزش 3</a>
+                <a href="#i">آموزش 4</a>
+                <a href="#j">آموزش 5</a>
+                <a href="#k">آموزش 6</a>
+                {% else %}
+                <a class="sing" href="{% url 'signup' %}">برای دسترسی به آموزش ها لطفا ابتدا ثبت نام کنید </a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="logiii">
+            {% if user.is_authenticated %}
+            <p class="user">سلام {{ user.username }}</p>
+            {% else %}
+            {% endif %}
+        </div>
+
+            <div class="hello">
+
+                <div class="main" id="a">
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/cssddd.jpg' %}" alt="">
+                    </div>
+                    <div class="bear">
+                        <h3>CSS چیست ؟</h3>
+                        <p>در پاسخ به سوال CSS چیست باید گفت: در واقع CSS یک زبان کمکی برای توصیف عناصر ظاهری و بصری HTML می باشد، بدین معنا که شما با استفاده از CSS نمای سایت خود را بصورت سفارشی تر طراحی خواهید کرد. بنابراین همانطور که در مقاله HTML چیست اشاره نمودیم ما به کمک HTML ساختمان و اسکلت سایت را بنا نهاده و سپس با به کمک کد های CSS ظاهر و نمای سایت را طراحی می کنیم.</p>
+                    </div>
+                </div>
+
+                <div class="main mainn" id="b">
+                    <div class="bear" style="margin-left: 3rem;">
+                        <h3>هدف و کاربرد CSS چیست ؟</h3>
+                        <p>هدف از تولید css در واقع جداسازی اطلاعات محتوا (که توسط زبانی مانند HTML نوشته شده اند) از اطلاعات ظاهری مانند صفحه بندی، رنگ و سایز و نوع فونت می باشد. این جداسازی موجب افزایش سرعت در دسترسی به سایت، انعطاف پذیری بیشتر برای کنترل ویژگی های ظاهری، قابلیت طراحی چندین صفحه با یک فرمت یکسان و جلوگیری از پیچیدگی و انجام کارهای تکراری در طراحی وب سایت می گردد.</p>
+                    </div>
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/css-01.jpg' %}" alt="">
+                    </div>
+                </div>
+                
+                <div class="main" id="c">
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/cssghjj.jpg' %}" alt="">
+                    </div>
+                    <div class="bear">
+                        <h3>فایل CSS چیست؟</h3>
+                        <p>css با ایجاد فایل css. همچنین شما را قادر می سازد تا نمایش صفحه مورد نظر خود را در چندین حالت مختلف Rendering مانند حالت نمایش بر روی مانیتور، حالت نمایش در زمان چاپ، در زمان حالت شناسایی صدا ( برای مرورگرهای مبتنی بر قابلیت شناسایی صدا) و همچنین برای نمایش در صفحات مرورگر موبایل را به درستی تنظیم نمایید.</p>
+                    </div>
+                </div>
+                
+                <div class="main mainn" id="d">
+                    <div class="bear">
+                        <h3>CSS مخفف چیست؟</h3>
+                        <p>واژه CSS مخفف cascading style sheets به معنی برگه های سبک آبشار یا برگه های آبشاری می باشد. به زبان CSS زبان برنامه نویسی ظاهری (Style Sheet Language) نیز می گویند.</p>
+                    </div>
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/css-d.jpg' %}" alt="">
+                    </div>
+                </div>
+                
+                <div class="main" id="e">
+                    <div class="gorilla">
+                        <img src="{% static './FilmPicture/css1.jpg' %}" alt="">
+                    </div>
+                    <div class="bear">
+                        <h3>کاربرد زبان CSS</h3>
+                        <p>برگه‌های CSS در واقع مسئولیت ایجاد ظاهر سایت را به عهده دارند و رنگ، اندازه و محل قرارگیری متون و دیگر تگ‌ های تعریف شده در HTML را تعیین می نمایند.
+                            شما به کمک زبان CSS می توانید برای صفحه خود در مدیا های مختلف ویژگی های مختلفی در نظر بگیرید (ریسپانسیو سازی). بنابراین به کمک سی اس اس شما این قدرت را خواهید داشت که ظاهر وب سایت خودتان را به هر شکل دلخواهی درآورید.</p>
+                    </div>
+                </div>
+                {% if user.is_authenticated %}
+            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                <div class="video" id="f">
+                    <p>شما به اولین مرحله ی آموزش ما رسیدید :</p>
+                </br>
+                    <video src="https://aspb35.cdn.asset.aparat.com/aparat-video/a72d01131a06348aa59043beceefb06436483199-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6Ijk0N2JmYTRjYzg0ODM0YTUwNjAzYzNlMzczYTY2NTRmIiwiZXhwIjoxNzA5NDA2MjY3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.pG5s5cgTbZTm8STm6k4g7B6Xstz5FRIWvylLUc3iIcE" type="video" controls="controls"></video>
+                </div>
+            </br></br>
+                <div class="video" id="g">
+                    <p>شما به دومین مرحله ی آموزش ما رسیدید :</p>
+                </br>
+                    <video src="https://aspb33.cdn.asset.aparat.com/aparat-video/42a59fa0ffd8589a2f04ead9d349d30136767409-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImJlODUxOGYwNDZhNTI1MmIxNGRlOGVjMDBkZDI4YjdlIiwiZXhwIjoxNzA5NDA2MzAzLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.wCvdoGHyQwlP610koaGQ4bxN-mH6plIWNB8Jm8rmoNA" type="video" controls="controls"></video>
+                </div>
+            </br></br>
+                <div class="video" id="h">
+                    <p>شما به سومین مرحله ی آموزش ما رسیدید :</p>
+                </br>
+                    <video src="https://aspb28.cdn.asset.aparat.com/aparat-video/6666b869d6b2737817405dc22f5626f837092736-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjhmMDAwZjg1MmNmMTkzY2Y2ZjcxNTNiZGE5ZWY5NjIzIiwiZXhwIjoxNzA5NDA2MzM5LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.-L1HBaP8UyQVtyZ31Fpx3sdMW0HYhLkFrDxm-pw-whQ" type="video" controls="controls"></video>
+                </div>
+            </br></br>
+                <div class="video" id="i">
+                    <p>شما به چهارمین مرحله ی آموزش ما رسیدید :</p>
+                </br>
+                    <video src="https://aspb32.cdn.asset.aparat.com/aparat-video/a053ba6ba8afcd0a90aa70d9077fe7c437419706-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjJlYjhlZWI2ZDQyODMxMmI5Yzg3Y2Y2MmRiNGFkMTE0IiwiZXhwIjoxNzA5NDA2NDMzLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.xn0ELqdR12Yy7xJA_8Fro7mTN2izpkUqS5jizwmglIE" type="video" controls="controls"></video>
+                </div>
+            </br></br>
+                <div class="video" id="j">
+                    <p>شما به پنجمین مرحله ی آموزش ما رسیدید :</p>
+                </br>
+                    <video src="https://aspb30.cdn.asset.aparat.com/aparat-video/71682f79b09b724ccfcf2f0fd87182cb37864237-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImFhNzJjZmFmMjc0MjkxMWY0MWIzODJhMGVlZmIxNDhjIiwiZXhwIjoxNzA5NDA2NDY1LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.gzuuQJtdIa-XhVIPb3m290qSh-UVEgEelw0cliYvrhE" type="video" controls="controls"></video>
+                </div>
+            </br></br>
+                <div class="video" id="k">
+                    <p>شما به ششمین مرحله ی آموزش ما رسیدید :</p>
+                </br>
+                    <video src="https://aspb28.cdn.asset.aparat.com/aparat-video/b66f314440412bb28b8257f2890fd99a38038799-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImVkMzZiNDI3ZWYwYjMzOTQ1YmNjOTA4YjNiNDFhNzhhIiwiZXhwIjoxNzA5NDA2NTAwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.HaREGExd8QykX6D0uWjuSR1k7lLN_madxqDljUtKxnM" type="video" controls="controls"></video>
+                </div>
+            </br>
+        </br>
+        {% else %}
+        {% endif %}
+            </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="ffooter">
+            <div class="iconn">
+                <img src="{% static './FilmPicture/Bale.png' %}" alt="">
+                <h3>تیم ما</h3>
+            </div>
+            <div class="team">
+                <h3>تیم ما</h3>
+                <a href="{% url 'aboutus' %}">درباره ما</a>
+            </div>
+        </div>
+        <div class="media">
+            <div class="bale">
+                <a href="#"><img src="{% static './FilmPicture/Bale.png' %}" alt=""></a>
+            </div>
+            <div class="telegram">
+                <a href="#"><img src="{% static './FilmPicture/Telegram.jpg' %}" alt=""></a>
+            </div>
         </div>
         <div class="c">
             <p>برای استفاده از مطالب ما، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای تیم ما است.</p>

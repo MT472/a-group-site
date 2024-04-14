@@ -20,10 +20,10 @@
                 {% csrf_token %}
                 <h2 class="form-tytle">فرم ورود</h2>
                 <label for="name">نام کاربری</label>
-                <input type="text" name="username" id="username" class="form-control" placeholder="لطفا نام را وارد کنید" required {{form.username}}>
+                <input type="text" name="username" id="username" class="form-control" placeholder="لطفا نام را وارد کنید" required {{form.username.value}}>
 
                 <label for="password">رمز عبور</label>
-                <input type="password" name="password" id="password" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="5" {{form.password}}>
+                <input type="password" name="password" id="password" class="form-control" placeholder="لطفا پسوردتان را وارد کنید" required minlength="5" {{form.password.value}}>
                 <button type="submit" class="btn">ورود</button>
                 <div class="forget">
                     <div>
