@@ -1,0 +1,90 @@
+html{
+    font-family: vazir-medium;
+    direction: rtl;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*main*/
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url(./FilmPicture/yes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+}
+.you{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 3rem;
+    border-radius: 20px;
+    flex-direction: column;
+    align-content: center;
+    width: 70%;
+    background-color: #ffd6d6;
+}
+h3{
+    font-size: 90%;
+    font-family: vazir-medium;
+    line-height: 1.5;
+}
+a{
+    margin: .3rem .8rem;
+    padding: 1.5rem 3rem;
+    border-radius: 9px;
+    background-color: #1f1f1f;
+    text-decoration-line: none;
+    font-size: 80%;
+    color: #fff;
+    display: inline-block;
+}
+.illi{
+    margin-bottom: 3rem;
+}
+
+@media (max-width:566px) {
+    .you{
+        width: 100%;
+    }
+    .main{
+        background:#ffd6d6 ;
+    }
+}
+
+input.form-control{
+    width: 70%;
+    font-family: inherit;
+    padding: .6rem ;
+    border: 2px solid #1f1f1f;
+    border-radius: 10px;
+}
+input:not([type="checkbox"]) {
+    display: block;
+    margin-bottom: .7rem;
+}
+input.form-control::placeholder{
+    color: #1f1f1f ;
+    font-size: .4rems;
+    font-family: vazir-light ;
+}
+input.form-control::-moz-placeholder{
+    color: #1f1f1f ;
+    font-size: .4rems;
+    font-family: vazir-light ;
+}
+input.form-control::-webkit-input-placeholder{
+    color: #1f1f1f ;
+    font-size: .4rems;
+    font-family: vazir-light ;
+}
+input.form-control::-ms-input-placeholder{
+    color: #1f1f1f ;
+    font-size: .4rems;
+    font-family: vazir-light ;
+}
+input.form-control{
+    color: #1f1f1f;
+}

@@ -10,6 +10,7 @@ html{
 
 .main{
     width: 100%;
+    height: 100vh;
     background: url(../FilmPicture/yes.jpg);
     background-repeat: no-repeat;
     background-size: cover;

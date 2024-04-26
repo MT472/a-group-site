@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./change-profile.css">
+</head>
+
+<body>
+      
+    <div class="main">
+        <center><div class="you">
+            <div class="illi">
+                <h3>نام کاربری جدید را وارد کنید :</h3>
+                <div>
+                    <input type="text" name="username" id="username" class="form-control" required {{form.username.value}}>
+                    <a href="#">تغییر نام کاربری</a>
+                </div>
+            </div>
+            <div>
+                <h3>ایمیل جدید را وارد کنید :</h3>
+                <div>
+                    <input class="form-control" {% render_field form.email.value class="form-control" hx-post="/check_email/" hx-trigger="keyup" hx-swap="outherhtml" hx-target="#email-error" %}>
+                    <a href="#">تغییر ایمیل</a>
+                </div>
+            </div>          
+        </div></center>
+    </div>
+    
+</body>
+
+</html>
